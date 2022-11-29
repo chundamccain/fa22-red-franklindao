@@ -38,7 +38,7 @@ const Home = () => {
             <span className="text-purple"> 
               Join
             </span>
-            <span className="ml-4">
+            <span className="ml-6">
               our efforts in shaping the industry.
             </span>
           </div>
