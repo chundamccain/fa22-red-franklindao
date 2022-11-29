@@ -1,6 +1,11 @@
+import React from 'react'
+
+import Landing from './components/Landing'
+
 const App = () => {
   return (
-    <h1>TODO: FranklinDAO</h1>
+    // Import react-router-dom later for routing to different pages (components)
+    <Landing />
   )
 }
 
