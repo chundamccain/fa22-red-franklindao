@@ -29,8 +29,8 @@ const Home = () => {
           </div>
 
           {/* Get Involved Button */}
-          <button>
-            <img src={involveButton} alt="involve button" className="w-52 hover:shadow-md"/>
+          <button className="w-52">
+            <img src={involveButton} alt="involve button" className="hover:shadow-md"/>
           </button>
 
           {/* Interest text */}
