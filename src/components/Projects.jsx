@@ -27,7 +27,7 @@ const Projects = () => (
 
     <div className='flex flex-row'>
     
-    <ButtonNext style = {{padding: "50px"}}><Image style={{ height: "80px" }} src={leftarr} /> </ButtonNext>
+    <ButtonBack style = {{padding: "50px"}}><Image style={{ height: "80px" }} src={leftarr} /> </ButtonBack>
 
     <Slider style={{ width: "1047px"}}>
       <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={0}>
