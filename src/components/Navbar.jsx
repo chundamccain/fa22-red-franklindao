@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
-      <div className="flex flex-row justify-between align-center pl-16">
+      <div className="flex flex-row justify-between align-center pl-16 mr-16">
           <div className="basis-1/3 flex">
             <Link className="Nav__link" to="/">
               <img src={logo} alt="" className="justify-self-start w-32 py-1 ml-14 shadow-md hover:shadow-xl" />
