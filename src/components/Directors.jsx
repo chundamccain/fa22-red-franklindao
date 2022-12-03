@@ -6,13 +6,11 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
+    
       <div className="flex flex-col h-screen text-white font-mono bg-background">
-        <div className="bg-background py-12 ">
-          <div className='flex justify-end flex-row gap-3 pr-12'>
-                <Link className="Nav__link" to="/development">Development</Link>
-                <Link className="Nav__link" to="/investments">Investments</Link> 
-                <Link className="Nav__link" to="/directors">Directors</Link>
-            </div>
+        
+        <div className="bg-background py-12">
+            
         </div>
 
         {/* Welcome section */}
@@ -20,7 +18,7 @@ const Home = () => {
           {/* Welcome Text */}
           <div className="mt-32 text-6xl font-bold w-1/2">
             <span >
-              Welcome to
+              Welcome to the Directors page
             </span>
             <span className="ml-9 text-purple"> 
               FranklinDAO
