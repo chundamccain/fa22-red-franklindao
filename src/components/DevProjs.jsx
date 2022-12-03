@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import ProjectsComp from './Projects'
 
 const DevProjs = () => {
+
   return (
     <>
       <div className="flex flex-col h-screen text-white font-mono bg-background">
@@ -21,7 +22,7 @@ const DevProjs = () => {
               Welcome to the
             </span>
             <span className="ml-9 mr-9 text-purple"> 
-              Operations
+              Projects
             </span>
             <span >
               page
@@ -29,7 +30,11 @@ const DevProjs = () => {
           </div>
         </div>
 
-        <ProjectsComp />
+        <div className = "mt-6 ">
+        <ProjectsComp /> 
+        </div>
+        
+         
       </div>
     </>
   )

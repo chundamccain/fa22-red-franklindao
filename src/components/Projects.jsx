@@ -1,38 +1,110 @@
 // imgs
-import involveButton from '../imgs/involvebutton.svg'
-
-// components
-import React, { useEffect, useState, useRef } from 'react'
-import Navbar from './Navbar'
-import { motion } from 'framer-motion'
-import { v4 as uuidv4 } from 'uuid'
+import React from 'react';
+import styled from 'styled-components';
+import leftarr from '../imgs/Vector52.png';
+import rightarr from '../imgs/Vector51.png';
 
 
 
-const Projects = ({myCollection}) => {
+import {
+  ButtonBack, ButtonFirst, ButtonLast, ButtonNext,
+  CarouselProvider, DotGroup, Image, ImageWithZoom, Slide, Slider,
+}  from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
-    const [scrollWidth, setScrollWidth] = useState(0)
-    const carousel = useRef()
+const Projects = () => (
+ 
+      
+    <CarouselProvider
+    visibleSlides={1}
+    totalSlides={3}
+    naturalSlideWidth={9}
+    naturalSlideHeight={3}
+    hasMasterSpinner
 
-    useEffect(() => {
-        setScrollWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
-      }, [myCollection])
+    className="grid h-screen place-items-center"
+  >
 
-  return (
-    <>
-      <div className="m-10 mt-8 flex justify-center ">
-        <motion.div ref={carousel} className="carousel cursor-grab overflow-hidden">
-          <motion.div drag="x" dragConstraints={{ right: 0, left: -scrollWidth }} className="inner-carousel flex">
-            {myCollection.map(img => (
-              <motion.div className="item pr-16" key={uuidv4()}>
-                <img src={img} alt="" className="drop-shadow shadow-md min-h-[26rem] h-[26rem] min-w-[36rem] w-[36rem] object-cover rounded-sm pointer-events-none" />
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
-      </div>
-    </>
-  )
-}
+    <div className='flex flex-row'>
+    
+    <ButtonNext style = {{padding: "50px"}}><Image style={{ height: "80px" }} src={leftarr} /> </ButtonNext>
 
-export default Projects
+    <Slider style={{ width: "1047px"}}>
+      <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={0}>
+        <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0" >
+            <div className= "flex flex-col">
+              <Text1>Project Name</Text1>
+              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol</Text2>
+            </div>
+            <Image style = {{width: "500px" , padding:"50px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+        </Wrapper>
+      </Slide>
+      <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={1}>
+        <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0" >
+            <div className= "flex flex-col">
+              <Text1>Project Name</Text1>
+              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol</Text2>
+            </div>
+            <Image style = {{width: "500px" , padding:"50px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+        </Wrapper>
+      </Slide>
+      <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={2}>
+        <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0" >
+            <div className= "flex flex-col">
+              <Text1>Project Name</Text1>
+              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol</Text2>
+            </div>
+            <Image style = {{width: "500px" , padding:"50px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+        </Wrapper>
+      </Slide>
+    
+    </Slider>
+
+    <ButtonNext style = {{padding: "50px"}}><Image style={{ height: "80px" }} src={rightarr} /> </ButtonNext>
+
+    </div>
+
+  </CarouselProvider>
+);
+
+export default Projects;
+
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+// Create a Wrapper component that'll render a <section> tag with some styles
+const Wrapper = styled.section`
+width: 1047px;
+height: 668px;
+background: #B05EC8;
+border-radius: 45px;
+`;
+
+const Text1 = styled.text`
+font-style: normal;
+text-align: center;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+`;
+
+const Text2 = styled.text`
+width: 365px;
+height: 350px;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+`;
+
