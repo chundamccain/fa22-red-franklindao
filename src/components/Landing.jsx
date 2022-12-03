@@ -1,5 +1,5 @@
 // imgs
-import logo from  '../imgs/logo.svg'
+import graphics from '../imgs/graphics.svg'
 import involveButton from '../imgs/involvebutton.svg'
 
 // components
@@ -8,10 +8,16 @@ import Navbar from './Navbar'
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col h-screen text-white font-mono">
+      <div className="flex flex-col h-screen text-white font-mono overscroll-contain">
         <div className="py-12 ">
           <Navbar />
         </div>
+
+        {/* Graphics */}
+        <div className="absolute bottom-[-20%] left-[67%] overflow-hidden">
+          <img src={graphics} alt=""  />
+        </div>
+
 
         {/* Welcome section */}
         <div className="flex flex-col mx-32">

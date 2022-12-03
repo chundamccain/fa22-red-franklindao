@@ -1,5 +1,4 @@
 // imgs
-import logo from  '../imgs/logo.svg'
 import involveButton from '../imgs/involvebutton.svg'
 
 // components
