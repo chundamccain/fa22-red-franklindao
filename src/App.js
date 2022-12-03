@@ -5,7 +5,7 @@ import Investments from './components/Investments'
 import Directors from './components/Directors'
 import Development from './components/Development'
 import Research from './components/Research'
-import Projects from './components/Projects'
+import Projects from './components/DevProjs'
 import Operations from './components/Operations'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -20,7 +20,7 @@ const App = () => {
         <Route path = "/investments" element = {<Investments />}></Route>
         <Route path = "/directors" element = {<Directors />}></Route>
         <Route path = "/operations" element = {<Research />}></Route>
-        <Route path = "/projects" element = {<Projects />}></Route>
+        <Route path = "/projects" element = {<Projects/>}></Route>
         <Route path = "/research" element = {<Operations />}></Route>
 
 
