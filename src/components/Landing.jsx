@@ -1,18 +1,16 @@
 // imgs
 import logo from  '../imgs/logo.svg'
 import involveButton from '../imgs/involvebutton.svg'
-import { Link } from 'react-router-dom';
+
+// components
+import Navbar from './Navbar'
 
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col h-screen text-white font-mono bg-background">
-        <div className="bg-background py-12 ">
-          <div className='flex justify-end flex-row gap-3 pr-12'>
-                <Link className="Nav__link" to="/development">Development</Link>
-                <Link className="Nav__link" to="/investments">Investments</Link> 
-                <Link className="Nav__link" to="/directors">Directors</Link>
-            </div>
+      <div className="flex flex-col h-screen text-white font-mono">
+        <div className="py-12 ">
+          <Navbar />
         </div>
 
         {/* Welcome section */}
