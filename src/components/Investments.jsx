@@ -1,6 +1,8 @@
 // imgs
 import involveButton from '../imgs/involvebutton.svg'
 import submitButton from '../imgs/submitbutton.svg'
+import Project from './Projects'
+import BigText from './Bigtext'
 
 // components
 import Navbar from './Navbar'
@@ -17,8 +19,17 @@ const Investments = () => {
         </div>
 
         {/* Welcome section */}
-        <div className="flex flex-col mx-32">
+        <div className="flex flex-col mx-32 items-center">
           {/* Welcome Text */}
+          <BigText name ={"Investments"} description ={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"}/>
+          
+          <div className='flex flex-row '>
+            <Person />
+            <Person />
+            <Person />
+          </div>
+
+          <Project />
           <div className="mt-32 text-6xl font-semibold w-3/4">
             <span >
               Welcome to the

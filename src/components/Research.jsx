@@ -4,6 +4,9 @@ import twitter from '../imgs/twitter.png'
 
 // components
 import Navbar from './Navbar'
+import Person from './Person'
+import BigText from './Bigtext'
+
 
 const Research = () => {
   return (
@@ -14,7 +17,15 @@ const Research = () => {
         </div>
 
         {/* Welcome section */}
-        <div className="flex flex-col mx-32">
+        <div className="flex flex-col mx-32 items-center">
+
+        <BigText name ={"Research"} description ={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"}/>
+          
+          <div className='flex flex-row '>
+            <Person />
+            <Person />
+            <Person />
+          </div>
           {/* Welcome Text */}
           <div className="mt-32 text-6xl font-semibold w-3/4">
             <span >
@@ -48,9 +59,9 @@ const Research = () => {
             </span>
             <div className='flex flex-row pr-10 pl-40'>
               <div className='pr-10'>
-                <img className="w-24 h-24" src={twitter} alt="" />
-                <img className="w-24 h-24" src={twitter} alt="" />
-                <img className="w-24 h-24" src={twitter} alt="" />
+                <img className="w-36 h-24" src={twitter} alt="" />
+                <img className="w-36 h-24" src={twitter} alt="" />
+                <img className="w-36 h-24" src={twitter} alt="" />
               </div>
 
 
