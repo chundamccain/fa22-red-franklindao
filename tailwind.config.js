@@ -12,6 +12,7 @@ module.exports = {
       // our custom colors
       background: '#161616',
       purple: "#B05EC8",
+      dark_purple: "#8352D0",
       blue: "#77D4FB",
 
       // tailwind default

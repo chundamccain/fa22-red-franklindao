@@ -4,6 +4,7 @@ import involveButton from '../imgs/involvebutton.svg'
 
 // components
 import Navbar from './Navbar'
+import EventBlock from './EventBlock'
 
 const Home = () => {
   return (
@@ -55,6 +56,8 @@ const Home = () => {
             FranklinDAO draws from broad networks of alumni founders and investors, seeking continued collaboration with leading innovators and drivers in the space. 
           </div>
         </div>
+
+        <EventBlock title={"Title1"}/>
 
         {/* Profile Carousel */}
         <div>
