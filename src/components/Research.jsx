@@ -2,11 +2,12 @@
 import involveButton from '../imgs/involvebutton.svg'
 import twitter from '../imgs/twitter.png'
 
+
 // components
 import Navbar from './Navbar'
 import Person from './Person'
 import BigText from './Bigtext'
-
+import MediaBlock from './MediaBlock'
 
 const Research = () => {
   return (
@@ -86,9 +87,19 @@ const Research = () => {
         <div>
           <span className="flex flex-col justify-center items-center text-4xl font-semibold pt-60">
             Videos, Podcasts, Audio
+
+            <div className='flex flex-row'>
+            <MediaBlock name = {"TITLE"}/>
+            <MediaBlock name = {"TITLE"}/>
+            <MediaBlock name = {"TITLE"}/>
+          </div>
+          
           </span>
+
+         
         </div>
         {/*Videos*/}
+          
         <div>
 
         </div>
