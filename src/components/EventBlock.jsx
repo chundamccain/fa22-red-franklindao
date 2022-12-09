@@ -2,7 +2,7 @@ const EventBlock = ({title}) => {
 
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center m-6">
         <div className="mb-2 text-xl">
           {title}
         </div>

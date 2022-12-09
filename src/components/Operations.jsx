@@ -3,7 +3,7 @@ import involveButton from '../imgs/involvebutton.svg'
 import Person from './Person'
 import Project from './Projects'
 import BigText from './Bigtext'
-
+import Events from './EventBlock'
 // components
 import Navbar from './Navbar'
 
@@ -24,6 +24,13 @@ const Development = () => {
               <Person />
             </div>        
         <BigText name ={"Spotlights"} description ={"Articles and past work done by operations committee members"} size = {"100px"}/>
+
+        <div className='flex flex-row' >
+              <Events title = {"TITLE"} />
+              <Events title = {"TITLE"}/>
+              <Events title = {"TITLE"}/>
+            </div>     
+
         </div>       
       </div>
     </>
