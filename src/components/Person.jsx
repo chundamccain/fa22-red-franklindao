@@ -12,9 +12,6 @@ const Person = ({name, description}) => {
 
   return (
     <>
-   
-    <div styles = {{width: "224px", height: "224px"}}>
-
         <div className = "flex flex-col items-center">
 
             <img className = "border-blue border-8 h-56 w-56 m-6 rounded-full" src = "https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg" alt = ""/>
@@ -31,8 +28,6 @@ const Person = ({name, description}) => {
 
 
         </div>
-
-    </div>
       
     </>
   )
