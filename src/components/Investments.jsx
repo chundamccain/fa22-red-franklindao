@@ -2,6 +2,7 @@
 import involveButton from '../imgs/involvebutton.svg'
 import purplesquare from '../imgs/purplesquare.svg'
 
+
 // components
 import Navbar from './Navbar'
 

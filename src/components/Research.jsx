@@ -4,6 +4,7 @@ import twitter from '../imgs/twitter.png'
 
 // components
 import Navbar from './Navbar'
+import Person from './Person'
 
 const Research = () => {
   return (
@@ -14,22 +15,33 @@ const Research = () => {
         </div>
 
         {/* Welcome section */}
-        <div className="flex flex-col mx-32">
+        <div className="flex flex-col justify-center items-center">
           {/* Welcome Text */}
-          <div className="mt-32 text-6xl font-semibold w-3/4">
-            <span >
-              Welcome to the
-            </span>
-            <span className="ml-9 mr-9 text-purple">
-              Research
-            </span>
-            <span >
-              page
-            </span>
-          </div>
+          <span className='text-4xl font-semibold pb-5'>
+            Research
+          </span>
+
+          <span className='text-center pr-80 pl-80'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol
+
+          </span>
+
         </div>
 
-        <div className="pt-60 pb-20">
+        <div className='flex flex row justify-center pt-40 pl-40 pr-40'>
+          <div className='pr-10'>
+          <Person/>
+          </div>
+          <div className='pr-10'>
+          <Person/>
+          </div>
+          <div className='pr-10'>
+          <Person/>
+          </div>
+
+        </div>
+
+        <div className="pt-40 pb-20">
           <span className="flex flex-col justify-center items-center text-4xl font-semibold p-5">
             Spotlights
           </span>
