@@ -4,6 +4,8 @@ import purplesquare from '../imgs/purplesquare.svg'
 
 // components
 import Navbar from './Navbar'
+import Person from './Person'
+
 
 const Investments = () => {
   return (
@@ -29,6 +31,7 @@ const Investments = () => {
           </div>
         </div>
         {/*Partnerships*/}
+
         <div className="flex flex-col mx-44">
           <div className="mt-44 text-4xl font-bold w-1/2">
             <span className="text-white">

@@ -14,7 +14,7 @@ const Home = () => {
         </div>
 
         {/* Graphics */}
-        <div className="absolute bottom-[-20%] left-[67%] overflow-hidden -z-50">
+        <div className="absolute bottom-[-20%] left-[71%] overflow-hidden -z-50">
           <img src={graphics} alt=""  />
         </div>
 

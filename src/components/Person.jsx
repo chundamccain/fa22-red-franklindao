@@ -1,4 +1,7 @@
 // imgs
+import image2 from '../imgs/image2.png'
+import image1 from '../imgs/image1.png'
+import involveButton from '../imgs/involvebutton.svg'
 
 // components
 import styled from 'styled-components';
@@ -10,13 +13,22 @@ const Person = ({name, description}) => {
   return (
     <>
    
-    <div styles = {{width: "216px", height: "430"}}>
+    <div styles = {{width: "224px", height: "224px"}}>
 
-        <div className = "flex flex-col">
+        <div className = "flex flex-col items-center">
 
-            <img className = "border-blue border-8" styles = {{width: "216px", height:"216px"}}src = "https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"/>
-            <Text1>Dog</Text1>
-            <Text2>nyuk nyuk nyuk nyuk nyuk</Text2>
+            <img className = "border-blue border-8 h-56 w-56 m-6 rounded-full" src = "https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg" alt = ""/>
+
+  
+            <Text1>Insert Name</Text1>
+            <Text2>Managing Director</Text2>
+            <Text2>Insert Small Bio</Text2>
+
+            <div className = "flex flex-row m-6">
+              <img className = "m-1 bg-purple" src = {image2} alt = ""/>
+              <img className = "m-1 bg-purple" src = {image1} alt = ""/>
+            </div>
+
 
         </div>
 
@@ -49,3 +61,14 @@ line-height: 28px;
 
 color: #FFFFFF;
 `;
+
+
+const image = styled.div`
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+`;
+

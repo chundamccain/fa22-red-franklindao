@@ -24,7 +24,6 @@ const App = () => {
         <Route path = "/projects" element = {<Projects/>}></Route>
         <Route path = "/research" element = {<Operations />}></Route>
 
-
       </Routes>
 
     </BrowserRouter>
