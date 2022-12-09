@@ -85,7 +85,7 @@ const Investments = () => {
 
         </div>
 
-        <div>
+        <div className="snap-center">
           Contact
         </div>
       </div>
