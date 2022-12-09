@@ -14,7 +14,7 @@ const Home = () => {
         </div>
 
         {/* Graphics */}
-        <div className="absolute right-0">
+        <div className="absolute right-0 top-24">
           <img src={graphics} className="h-screen" alt=""  />
         </div>
 
