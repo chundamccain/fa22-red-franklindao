@@ -1,11 +1,12 @@
 // imgs
 import involveButton from '../imgs/involvebutton.svg'
-import purplesquare from '../imgs/purplesquare.svg'
+import submitButton from '../imgs/submitbutton.svg'
 
 // components
 import Navbar from './Navbar'
 import Person from './Person'
 
+import Company from './Company'
 
 const Investments = () => {
   return (
@@ -30,67 +31,60 @@ const Investments = () => {
             </span>
           </div>
         </div>
-        {/*Partnerships*/}
-
-        <div className="flex flex-col mx-44">
-          <div className="mt-44 text-4xl font-bold w-1/2">
-            <span className="text-white">
+        
+        <div className="flex flex-row mt-40">
+          {/*Partnerships*/}
+          <div className="flex flex-col items-center basis-1/2">
+            <div className="mt-72 text-5xl font-bold text-white">
               Partnerships
-            </span>
-          </div>
+            </div>
 
-        </div>
-
-        <div className="flex flex-col mx-32">
-          <div className="tracking-tight leading-5 text-base mt-8 text-[18px] w-1/2">
-            Our partners who make our projects
-          </div>
-
-          <div className="flex flex-col mx-32">
-            <div className="tracking-tight leading-5 text-base mt-8 text-[18px] w-1/2">
+            <div className="tracking-tight leading-5 mt-8 w-50 text-[18px]">
+              Our partners who make our projects
+            </div>
+            <div className="tracking-tight leading-5 w-50 text-[18px]">
               possible
             </div>
-          </div>
-        </div>
 
-        <div className="flex flex-col mx-24">
-          <div className="tracking-tight leading-5 text-base mt-8 text-[18px] w-1/2">
-            Click here to learn more about our potential
-          </div>
-
-          <div className="flex flex-col mx-36">
-            <div className="tracking-tight leading-5 text-base mt-8 text-[18px] w-1/2">
+            <div className="mt-6 tracking-tight leading-5 text-[18px]">
+              Click here to learn more about our potential 
+            </div>
+            <div className="tracking-tight leading-5 w-50 text-[18px]">
               partnerships
             </div>
           </div>
+          
+          <div className="mr-20 grid grid-cols-3 basis-1/2">
+            <div className="col-span-3">
+              <Company company={"Company1"} />
+            </div>
+            
+            <Company company={"Company2"} />
+            <Company company={"Company3"} />
+            <Company company={"Company4"} />
+
+            <div className="col-span-3">
+              <Company className="col-span-3" company={"Company5"} />
+            </div>
+          </div>
         </div>
 
-        <div className="grid">
-          <div>
-            <img className="float-right" src={purplesquare} alt="">
-            </img>
+        <div className="flex justify-center items-center h-scree mt-28">
+          <div className="flex flex-col items-center">
+            <div className="text-4xl">
+              Contact
+            </div>
+
+            <input className="w-[45rem] shadow border rounded-lg py-5 px-3 mt-14 text-center text-black text-lg leading-tight focus:outline-none focus:shadow-outline focus:border-purple " type="text" placeholder="Email" />
+            <input className="w-[45rem] shadow border rounded-lg py-5 px-3 mt-10 text-center text-black text-lg leading-tight focus:outline-none focus:shadow-outline focus:border-purple " type="text" placeholder="Name" />
+            <input className="w-[45rem] shadow border rounded-lg py-5 px-3 mt-10 text-center text-black text-lg leading-tight focus:outline-none focus:shadow-outline focus:border-purple " type="text" placeholder="Question" />
+          
+            <button className="w-52 mt-10 mb-14">
+              <img src={submitButton} alt="submit button" className="hover:shadow-md"/>
+            </button>
           </div>
-
-
-          <div>
-            <img className="float-right" src={purplesquare} alt="">
-            </img>
-            <img className="float-right" src={purplesquare} alt="">
-            </img>
-            <img className="float-right" src={purplesquare} alt="">
-            </img>
-          </div>
-
-          <div>
-            <img className="float-right" src={purplesquare} alt="">
-            </img>
-          </div>
-
         </div>
 
-        <div>
-          Contact
-        </div>
       </div>
 
 
