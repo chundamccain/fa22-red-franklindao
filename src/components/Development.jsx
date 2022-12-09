@@ -17,7 +17,7 @@ const Development = () => {
 
         {/* Welcome section */}
         <div className="flex flex-col mx-32 items-center">
-        <BigText name ={"Development"} description ={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"}/>
+        <BigText name ={"Development"} description ={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} with = {"940px"}/>
           <div className='flex flex-row '>
               <Person />
               <Person />
