@@ -28,7 +28,6 @@ const Investments = () => {
             </span>
           </div>
         </div>
-
         {/*Partnerships*/}
         <div className="flex flex-col mx-44">
           <div className="mt-44 text-4xl font-bold w-1/2">
@@ -63,13 +62,36 @@ const Investments = () => {
           </div>
         </div>
 
-        <div className="">
-          <img src={purplesquare} alt="">
-          </img>
+        <div className="grid">
+          <div>
+            <img className="float-right" src={purplesquare} alt="">
+            </img>
+          </div>
+
+
+          <div>
+            <img className="float-right" src={purplesquare} alt="">
+            </img>
+            <img className="float-right" src={purplesquare} alt="">
+            </img>
+            <img className="float-right" src={purplesquare} alt="">
+            </img>
+          </div>
+
+          <div>
+            <img className="float-right" src={purplesquare} alt="">
+            </img>
+          </div>
+
         </div>
 
-
+        <div>
+          Contact
+        </div>
       </div>
+
+
+
     </>
   )
 }
