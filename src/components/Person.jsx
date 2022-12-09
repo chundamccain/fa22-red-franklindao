@@ -6,9 +6,7 @@ import involveButton from '../imgs/involvebutton.svg'
 // components
 import styled from 'styled-components';
 
-
-
-const Person = ({name, description,}) => {
+const Person = ({name, description}) => {
 
   return (
     <>

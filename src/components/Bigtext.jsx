@@ -32,7 +32,6 @@ export default BigText
 
 
 const Text1 = styled.text`
-font-family: 'Menlo';
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
