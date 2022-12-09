@@ -1,35 +1,33 @@
 // imgs
 import involveButton from '../imgs/involvebutton.svg'
+import Person from './Person'
+import Project from './Projects'
+import BigText from './Bigtext'
 
 // components
 import Navbar from './Navbar'
 
-const Operations = () => {
+const Development = () => {
   return (
     <>
-      <div className="flex flex-col h-screen text-white font-mono bg-background">
+      <div className="flex flex-col h-screen text-white font-mono bg-background ">
         <div className="py-12 ">
           <Navbar />
         </div>
 
         {/* Welcome section */}
-        <div className="flex flex-col mx-32">
-          {/* Welcome Text */}
-          <div className="mt-32 text-6xl font-semibold w-3/4">
-            <span >
-              Welcome to the
-            </span>
-            <span className="ml-9 mr-9 text-purple"> 
-              Operations
-            </span>
-            <span >
-              page
-            </span>
-          </div>
-        </div>
+        <div className="flex flex-col mx-32 items-center">
+        <BigText name ={"Development"} description ={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} size = {"940px"}/>
+          <div className='flex flex-row '>
+              <Person />
+              <Person />
+              <Person />
+            </div>        
+        <BigText name ={"Spotlights"} description ={"Articles and past work done by operations committee members"} size = {"100px"}/>
+        </div>       
       </div>
     </>
   )
 }
 
-export default Operations
+export default Development

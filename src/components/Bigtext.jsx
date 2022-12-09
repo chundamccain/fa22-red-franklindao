@@ -8,12 +8,12 @@ import styled from 'styled-components';
 
 
 
-const BigText = ({name, description}) => {
+const BigText = ({name, description, size}) => {
 
   return (
     <>
    
-    <div className = "m-8 items-center" styles = {{maxwidth: "905px"}}>
+    <div className = "m-8 items-center" styles = {{width: size}}>
 
         <div className = "flex flex-col items-center">
 
