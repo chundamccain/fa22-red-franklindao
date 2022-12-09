@@ -29,7 +29,6 @@ const Investments = () => {
             <Person />
           </div>
 
-          <Project />
           <div className="mt-32 text-6xl font-semibold w-3/4">
             <span >
               Welcome to the
