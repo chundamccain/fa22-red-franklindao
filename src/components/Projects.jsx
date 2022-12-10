@@ -40,7 +40,7 @@ const Projects = () => (
         </Wrapper>
       </Slide>
       <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={1}>
-        <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0" >
+        <Wrapper className = "border-8 border-purple  font-mono flex flex-row items-center align-items justify-center h-screen pb-0 rounded-3xl" >
             <div className= "flex flex-col">
               <Text1>Project Name</Text1>
               <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol</Text2>
@@ -49,7 +49,7 @@ const Projects = () => (
         </Wrapper>
       </Slide>
       <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={2}>
-        <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0" >
+        <Wrapper className = "border-8 border-purple  font-mono flex flex-row items-center align-items justify-center h-screen pb-0 rounded-3xl" >
             <div className= "flex flex-col">
               <Text1>Project Name</Text1>
               <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol</Text2>
@@ -83,6 +83,8 @@ const Text1 = styled.text`
 font-style: normal;
 text-align: center;
 font-weight: 700;
+font-family: 'Karla';
+margin-bottom: 50px;
 font-size: 40px;
 line-height: 47px;
 /* identical to box height */
@@ -96,6 +98,7 @@ width: 365px;
 height: 350px;
 font-style: normal;
 font-weight: 400;
+font-family: 'Karla';
 font-size: 24px;
 line-height: 28px;
 text-align: center;
