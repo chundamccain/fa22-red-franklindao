@@ -13,7 +13,7 @@ const BigText = ({name, description, size}) => {
   return (
     <>
    
-    <div className = "m-8 items-center" styles = {{width: size}}>
+    <div className = "m-8 items-center">
 
         <div className = "flex flex-col items-center">
 
@@ -51,6 +51,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 24px;
 font-family: 'Karla';
+width: 900px;
 
 line-height: 33px;
 text-align: center;
