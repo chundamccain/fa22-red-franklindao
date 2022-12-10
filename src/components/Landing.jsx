@@ -5,6 +5,8 @@ import involveButton from '../imgs/involvebutton.svg'
 // components
 import Navbar from './Navbar'
 import MediaBlock from './MediaBlock'
+import { Carousel } from 'react-bootstrap'
+import Directors from './Carousel'
 
 const Home = () => {
   return (
@@ -57,7 +59,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Profile Carousel */}
+        <Directors/>
         <div>
 
         </div>

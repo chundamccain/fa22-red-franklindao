@@ -6,16 +6,16 @@ import involveButton from '../imgs/involvebutton.svg'
 // components
 import styled from 'styled-components';
 
-const Person = ({name, description, image}) => {
+const AdaptPerson = ({name, description,bio, image}) => {
 
   return (
     <>
       <div className = "flex flex-col items-center">
         <img className = "border-blue border-8 h-56 w-56 m-16 rounded-full" src="https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg" alt = ""/>
 
-        <Text1>Insert Name</Text1>
-        <Text2>Managing Director</Text2>
-        <Text2>Insert Small Bio</Text2>
+        <Text1>{name}</Text1>
+        <Text2>{description}</Text2>
+        <Text2>{bio}</Text2>
 
         <div className = "flex flex-row m-6">
           <img className = "m-1 bg-purple rounded-md" src = {image2} alt = ""/>
@@ -26,7 +26,7 @@ const Person = ({name, description, image}) => {
   )
 }
 
-export default Person
+export default AdaptPerson
 
 
 const Text1 = styled.text`
