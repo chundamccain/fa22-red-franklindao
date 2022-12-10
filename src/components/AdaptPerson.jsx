@@ -34,7 +34,7 @@ font-style: normal;
 font-weight: 700;
 font-family: 'Karla';
 
-font-size: 30px;
+font-size: 24px;
 line-height: 35px;
 /* identical to box height */
 
@@ -45,10 +45,9 @@ color: #FFFFFF;
 
 const Text2 = styled.text`
 font-style: normal;
-font-family: 'Karla';
 
 font-weight: 400;
-font-size: 24px;
+font-size: 20px;
 line-height: 28px;
 
 color: #FFFFFF;
