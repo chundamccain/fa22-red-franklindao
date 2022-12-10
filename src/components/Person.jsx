@@ -11,7 +11,7 @@ const Person = ({name, description, image}) => {
   return (
     <>
       <div className = "flex flex-col items-center object-contain">
-        <img className = "border-blue border-8 h-56 w-56 m-12 rounded-full" src="https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg" alt = ""/>
+        <img className = "border-blue border-8 h-56 w-56 m-8 rounded-full" src="https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg" alt = ""/>
 
         <Text1>Insert Name</Text1>
         <Text2>Managing Director</Text2>
@@ -32,7 +32,7 @@ export default Person
 const Text1 = styled.text`
 font-style: normal;
 font-weight: 700;
-font-size: 30px;
+font-size: 25px;
 line-height: 35px;
 /* identical to box height */
 font-family: 'Karla';
@@ -46,7 +46,7 @@ color: #FFFFFF;
 const Text2 = styled.text`
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
+font-size: 20px;
 line-height: 28px;
 font-family: 'Karla';
 

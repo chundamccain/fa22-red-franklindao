@@ -32,29 +32,29 @@ const Projects = () => (
     <Slider style={{ width: "1047px"}}>
       <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={0}>
         <Wrapper className = "border-8 border-purple font-mono flex flex-row items-center align-items justify-center h-screen pb-0 rounded-3xl" >
-            <div className= "flex flex-col">
+            <div className= "flex flex-col mt-20 mr-10">
               <Text1>Project Name</Text1>
               <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol</Text2>
             </div>
-            <Image style = {{width: "500px" , padding:"50px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+            <Image className = "rounded-full" style = {{height: "500px", width: "500px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
         </Wrapper>
       </Slide>
       <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={1}>
-        <Wrapper className = "border-8 border-purple  font-mono flex flex-row items-center align-items justify-center h-screen pb-0 rounded-3xl" >
-            <div className= "flex flex-col">
+      <Wrapper className = "border-8 border-purple font-mono flex flex-row items-center align-items justify-center h-screen pb-0 rounded-3xl" >
+            <div className= "flex flex-col mt-20 mr-10">
               <Text1>Project Name</Text1>
               <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol</Text2>
             </div>
-            <Image style = {{width: "500px" , padding:"50px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+            <Image className = "rounded-full" style = {{height: "500px", width: "500px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
         </Wrapper>
       </Slide>
       <Slide style={{ padding: "5em 0em", height: "668px" }} tag="a" index={2}>
-        <Wrapper className = "border-8 border-purple  font-mono flex flex-row items-center align-items justify-center h-screen pb-0 rounded-3xl" >
-            <div className= "flex flex-col">
+      <Wrapper className = "border-8 border-purple font-mono flex flex-row items-center align-items justify-center h-screen pb-0 rounded-3xl" >
+            <div className= "flex flex-col mt-20 mr-10">
               <Text1>Project Name</Text1>
               <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol</Text2>
             </div>
-            <Image style = {{width: "500px" , padding:"50px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+            <Image className = "rounded-full" style = {{height: "500px", width: "500px" , padding:"20px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
         </Wrapper>
       </Slide>
     
