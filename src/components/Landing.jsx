@@ -14,8 +14,7 @@ import Navbar from './Navbar'
 import MediaBlock from './MediaBlock'
 import { Carousel } from 'react-bootstrap'
 import Directors from './Carousel'
-
-
+import CommitteeBlock from './CommitteeBlock'
 
 const Home = () => {
   return (
@@ -76,28 +75,21 @@ const Home = () => {
         {/* Commitee Overviews Section */}
         <div className='flex flex-col justify-center items-center pb-40'>
 
-          <span className='text-4xl font-semibold pt-60 pb-40'>
-            Commitee Overviews
+          <span className='text-5xl font-medium mt-60 mb-36'>
+            Committee Overviews
           </span>
 
-          <div className='flex flex-row pb-36'>
-            <img src={overview1} alt="" className="pr-40">
-            </img>
-            <img src={overview2} alt="" className="pr-20 pl-8">
-            </img>
-            <img src={overview3} alt="" className="pl-20 pr-8">
-            </img>
-            <img src={overview4} alt="" className="pl-40">
-            </img>
+          <div className='grid grid-cols-4 gap-20 mb-28'>
+            <CommitteeBlock img={overview1} link={"/research"} name={"Research"} description={"Quantitative market analysis"}/>
+            <CommitteeBlock img={overview2} link={"/investments"} name={"Investment"} description={"Portfolio management"}/>
+            <CommitteeBlock img={overview3} link={"/"} name={"Governance"} description={"Vote and proposal generation"}/>
+            <CommitteeBlock img={overview4} link={"/development"} name={"Development"} description={"Professional engineering experience"}/>
           </div>
 
-          <div className='flex flex-row'>
-            <img src={overview5} alt="" className="pr-24">
-            </img>
-            <img src={overview6} alt="" className="pr-20 pl-20">
-            </img>
-            <img src={overview7} alt="" className="pl-24">
-            </img>
+          <div className='grid grid-cols-3 gap-20 mb-36'>
+            <CommitteeBlock img={overview5} link={"/events"} name={"Events"} description={"Ecosystem exposure and networking"}/>
+            <CommitteeBlock img={overview6} link={"/operations"} name={"Operations"} description={"Internal DAO management"}/>
+            <CommitteeBlock img={overview7} link={"/education"} name={"Education"} description={"Onboarding and onramping"}/>
           </div>
 
         </div>

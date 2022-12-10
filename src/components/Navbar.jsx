@@ -19,9 +19,6 @@ const Navbar = () => {
               <Link className="Nav__link" to="/investments">Investments</Link> 
             </li>
             <li>
-              <Link className="Nav__link" to="/directors">Directors</Link>
-            </li>
-            <li>
               <Link className="Nav__link" to="/operations">Operations</Link>
             </li>
             <li>
