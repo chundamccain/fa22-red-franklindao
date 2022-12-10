@@ -75,18 +75,18 @@ const Home = () => {
         {/* Commitee Overviews Section */}
         <div className='flex flex-col justify-center items-center pb-40'>
 
-          <span className='text-5xl font-medium mt-60 mb-36'>
+          <span className='text-4xl font-medium mt-60 mb-32'>
             Committee Overviews
           </span>
 
-          <div className='grid grid-cols-4 gap-20 mb-28'>
+          <div className='grid grid-cols-4 gap-10 mb-28'>
             <CommitteeBlock img={overview1} link={"/research"} name={"Research"} description={"Quantitative market analysis"}/>
             <CommitteeBlock img={overview2} link={"/investments"} name={"Investment"} description={"Portfolio management"}/>
             <CommitteeBlock img={overview3} link={"/"} name={"Governance"} description={"Vote and proposal generation"}/>
             <CommitteeBlock img={overview4} link={"/development"} name={"Development"} description={"Professional engineering experience"}/>
           </div>
 
-          <div className='grid grid-cols-3 gap-20 mb-36'>
+          <div className='grid grid-cols-3 gap-10'>
             <CommitteeBlock img={overview5} link={"/events"} name={"Events"} description={"Ecosystem exposure and networking"}/>
             <CommitteeBlock img={overview6} link={"/operations"} name={"Operations"} description={"Internal DAO management"}/>
             <CommitteeBlock img={overview7} link={"/education"} name={"Education"} description={"Onboarding and onramping"}/>
