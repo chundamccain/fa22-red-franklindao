@@ -83,6 +83,8 @@ const Text1 = styled.text`
 font-style: normal;
 text-align: center;
 font-weight: 700;
+font-family: 'Karla';
+margin-bottom: 50px;
 font-size: 40px;
 line-height: 47px;
 /* identical to box height */
@@ -96,6 +98,7 @@ width: 365px;
 height: 350px;
 font-style: normal;
 font-weight: 400;
+font-family: 'Karla';
 font-size: 24px;
 line-height: 28px;
 text-align: center;

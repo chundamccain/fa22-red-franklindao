@@ -34,6 +34,8 @@ export default BigText
 const Text1 = styled.text`
 font-style: normal;
 font-weight: 700;
+font-family: 'Karla';
+
 font-size: 40px;
 line-height: 47px;
 text-align: center;
@@ -48,6 +50,8 @@ const Text2 = styled.text`
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
+font-family: 'Karla';
+
 line-height: 33px;
 text-align: center;
 
@@ -60,6 +64,8 @@ font-style: normal;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
+font-family: 'Karla';
+
 line-height: 28px;
 
 color: #FFFFFF;
