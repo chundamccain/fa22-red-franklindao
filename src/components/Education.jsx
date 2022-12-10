@@ -18,9 +18,6 @@ const Education = () => {
 
                 </div>
 
-                <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-20'>
-                    Curriculum
-                </div>
 
                 <div className='flex flex-col justify-center items-center text-4xl font-semibold'>
                     Instructors

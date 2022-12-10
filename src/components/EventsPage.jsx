@@ -32,12 +32,14 @@ const EventsPage = () => {
                 </div>
 
                 <div className='flex flex-col justify-center items-center'>
-                    <div className='flex flex-row pb-60' >
+                    <div className='flex flex-row pb-30' >
                         <Events title={"TITLE"} />
                         <Events title={"TITLE"} />
                         <Events title={"TITLE"} />
                     </div>
                 </div>
+
+                
 
 
                 <div className="flex justify-center items-center h-scree mt-28">
