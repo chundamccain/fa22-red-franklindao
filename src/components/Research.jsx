@@ -28,7 +28,7 @@ const Research = () => {
             <Person />
           </div>
           {/* Welcome Text */}
-          <div className="mt-32 text-6xl font-semibold w-3/4">
+          {/*<div className="mt-32 text-6xl font-semibold w-3/4">
             <span >
               Welcome to the
             </span>
@@ -38,7 +38,7 @@ const Research = () => {
             <span >
               page
             </span>
-          </div>
+  </div>*/}
         </div>
 
         <div className="pt-60 pb-20">

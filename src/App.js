@@ -7,9 +7,12 @@ import Development from './components/Development'
 import Research from './components/Research'
 import Projects from './components/DevProjs'
 import Operations from './components/Operations'
+import EventsPage from './components/EventsPage'
+import Education from './components/Education'
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 const App = () => {
   return (
@@ -23,6 +26,8 @@ const App = () => {
         <Route path = "/operations" element = {<Operations />}></Route>
         <Route path = "/projects" element = {<Projects/>}></Route>
         <Route path = "/research" element = {<Research />}></Route>
+        <Route path = "/events" element = {<EventsPage/>}></Route>
+        <Route path = "/education" element = {<Education/>}></Route>
 
       </Routes>
 
