@@ -75,31 +75,43 @@ const Carousel = () => {
   }
 
   return (
-    <div className="carousel-container flex flex-ro m-16">
-      <button className="carousel-button" onClick={handlePrevious}>
-        Previous
-      </button>
-
-      {/* <img
-        className="carousel-item"
-        src={portraits[index]}
-        alt="portrait"
-        width="100%"
-      /> */}
-      {/* style the first and third one such that there is a purple overlay */}
-
-      <div className = "flex flex-row" >
-        <Shadow image = {portraits[prevIndex].image} />
-        <Person image = {portraits[index].image} name = {portraits[index].name} description = {portraits[index].description} bio = {portraits[index].bio}/>
-        <Shadow image = {portraits[nextIndex].image} />
+    <>
+      <div className="text-4xl font-bold mb-4">
+        Board of Directors
       </div>
-      
 
-      
-      <button className="carousel-button" onClick={handleNext}>
-        Next
-      </button>
-    </div>
+      <div className="carousel-container flex flex-ro m-16">
+        <button className="relative bottom-24 carousel-button mr-10 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handlePrevious}>
+          &lt;
+        </button>
+
+        {/* <img
+          className="carousel-item"
+          src={portraits[index]}
+          alt="portrait"
+          width="100%"
+        /> */}
+        {/* style the first and third one such that there is a purple overlay */}
+
+        <div className = "flex flex-row" >
+          <div className="relative left-14 -z-10 opacity-40">
+            <Shadow image = {portraits[prevIndex].image} />
+          </div> 
+
+          <div className="z-10">
+            <Person image = {portraits[index].image} name = {portraits[index].name} description = {portraits[index].description} bio = {portraits[index].bio}/>
+          </div>
+
+          <div className="relative right-14 -z-10 opacity-40">
+            <Shadow image = {portraits[nextIndex].image} />
+          </div>
+        </div>
+        
+        <button className="relative bottom-24 carousel-button mr-10 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handleNext}>
+          &gt;
+        </button>
+      </div>
+    </>
   )
 }
 

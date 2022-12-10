@@ -62,19 +62,17 @@ const Home = () => {
             </span>
           </div>
 
-          <div className="tracking-tight leading-5 text-base mt-8 text-[18px] w-1/2">
+          <div className="tracking-tight leading-5 text-base mt-8 text-[18px] w-1/2 mb-28">
             FranklinDAO draws from broad networks of alumni founders and investors, seeking continued collaboration with leading innovators and drivers in the space.
           </div>
         </div>
 
-        <Directors/>
-        <div>
-
+        <div className="flex flex-col justify-center items-center mt-80">
+          <Directors/>
         </div>
 
         {/* Commitee Overviews Section */}
         <div className='flex flex-col justify-center items-center pb-40'>
-
           <span className='text-4xl font-medium mt-60 mb-32'>
             Committee Overviews
           </span>

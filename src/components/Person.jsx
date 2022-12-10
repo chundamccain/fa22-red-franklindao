@@ -3,9 +3,6 @@ import image2 from '../imgs/image2.png'
 import image1 from '../imgs/image1.png'
 import involveButton from '../imgs/involvebutton.svg'
 
-
-
-
 // components
 import styled from 'styled-components';
 
