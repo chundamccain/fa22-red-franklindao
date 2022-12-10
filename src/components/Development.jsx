@@ -29,10 +29,10 @@ const Development = () => {
               <span className='text-4xl font-semibold pb-5'>
                 Projects
               </span>
-              <span>
+              <span className="text-xl">
                 These are some of the projects and
               </span>
-              <span>
+              <span className="text-xl">
                 clients that we have been working with
               </span>
             </div>
