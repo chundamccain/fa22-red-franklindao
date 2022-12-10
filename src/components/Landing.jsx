@@ -15,6 +15,8 @@ import MediaBlock from './MediaBlock'
 import { Carousel } from 'react-bootstrap'
 import Directors from './Carousel'
 
+
+
 const Home = () => {
   return (
     <>
