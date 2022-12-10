@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import BigText from './Bigtext'
 import Events from './EventBlock'
 import submitButton from '../imgs/submitbutton.svg'
+import Upcoming from './UpcomingEvent'
 
 const EventsPage = () => {
     return (
@@ -20,6 +21,10 @@ const EventsPage = () => {
 
                 <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-60'>
                     Upcoming Events
+                    <Upcoming/>
+                    <Upcoming/>
+                    <Upcoming/>
+
                 </div>
 
                 <div className='flex flex-col justify-center items-center text-4xl font-semibold'>

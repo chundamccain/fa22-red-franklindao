@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
+      
       // our custom colors
       background: '#161616',
       purple: "#B05EC8",

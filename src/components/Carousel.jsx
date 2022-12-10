@@ -2,6 +2,9 @@ import React, { useState } from "react"
 import Person from './AdaptPerson'
 import Shadow from './ShadowPerson'
 
+import leftarr from '../imgs/Vector52.png';
+import rightarr from '../imgs/Vector51.png';
+
 import Alejandro from "../imgs/AlejandroSafdie_MBAPresident.jpg"
 import Bo from "../imgs/BoCui_Treasurer.jpg"
 import Chunda from "../imgs/ChundaMcCain_UndergraduatePresident.jpg"
