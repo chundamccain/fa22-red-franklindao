@@ -11,7 +11,7 @@ const AdaptPerson = ({name, description,bio, image}) => {
   return (
     <>
       <div className = "flex flex-col items-center">
-        <img className = "mb-8 border-purple border-8 h-72 w-72  rounded-full" src={image} alt = ""/>
+        <img className = "mb-8 border-purple border-8 h-72 w-72 rounded-full object-cover" src={image} alt = ""/>
 
         <Text1>{name}</Text1>
         <Text2>{description}</Text2>
