@@ -84,7 +84,7 @@ const Carousel = () => {
       </div>
 
       <div className="carousel-container flex flex-ro m-16">
-        <button className="relative bottom-24 carousel-button mr-10 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handlePrevious}>
+        <button className="relative top-28 h-20 carousel-button mr-10 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handlePrevious}>
           &lt;
         </button>
 
@@ -110,7 +110,7 @@ const Carousel = () => {
           </div>
         </div>
         
-        <button className="relative bottom-24 carousel-button mr-10 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handleNext}>
+        <button className="relative top-28 h-20 carousel-button mr-10 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handleNext}>
           &gt;
         </button>
       </div>
