@@ -11,7 +11,7 @@ const AdaptPerson = ({name, description,bio, image}) => {
   return (
     <>
       <div className = "flex flex-col items-center">
-        <img className = "mb-8 border-purple border-8 h-72 w-72 rounded-full object-cover" src={image} alt = ""/>
+        <img className = "mb-8 border-purple border-8  w-72 rounded-full object-cover" src={image} alt = ""/>
 
         <Text1>{name}</Text1>
         <Text2>{description}</Text2>
@@ -33,7 +33,7 @@ const Text1 = styled.text`
 font-style: normal;
 font-weight: 700;
 font-family: 'Karla';
-
+text-align: center;
 font-size: 24px;
 line-height: 35px;
 /* identical to box height */
@@ -45,10 +45,10 @@ color: #FFFFFF;
 
 const Text2 = styled.text`
 font-style: normal;
-
+text-align: center;
 font-weight: 400;
-font-size: 20px;
-line-height: 28px;
+font-size: 1.2rem;
+line-height: 1.4rem;
 
 color: #FFFFFF;
 `;
@@ -57,9 +57,9 @@ color: #FFFFFF;
 const image = styled.div`
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-
+font-size: 1.4rem;
+line-height: 1.8rem;
+text-align: center;
 color: #FFFFFF;
 `;
 
