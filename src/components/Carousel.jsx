@@ -83,10 +83,8 @@ const Carousel = () => {
         Board of Directors
       </div>
 
-      <div className="carousel-container flex flex-ro m-16">
-        <button className="relative top-28 h-20 carousel-button mr-10 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handlePrevious}>
-          &lt;
-        </button>
+      <div className="carousel-container flex flex-row m-16">
+       
 
         {/* <img
           className="carousel-item"
@@ -95,6 +93,10 @@ const Carousel = () => {
           width="100%"
         /> */}
         {/* style the first and third one such that there is a purple overlay */}
+
+        <button className="relative top-28 h-20 carousel-button mr-5 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handlePrevious}>
+          &lt;
+        </button>
 
         <div className = "flex flex-row" >
           <div className="relative left-14 -z-10 opacity-40">
@@ -110,7 +112,7 @@ const Carousel = () => {
           </div>
         </div>
         
-        <button className="relative top-28 h-20 carousel-button mr-10 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handleNext}>
+        <button className="relative top-28 h-20 carousel-button ml-5 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handleNext}>
           &gt;
         </button>
       </div>
