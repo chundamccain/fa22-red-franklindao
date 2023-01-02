@@ -12,7 +12,7 @@ const CommitteeBlock = ({img, link, name, description}) => {
           {name}
         </div> 
 
-        <div className="mt-1 text-grey text-lg">
+        <div className="mt-1 text-grey text-lg text-center">
           {description}
         </div>
       </div>
