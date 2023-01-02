@@ -9,7 +9,9 @@ import Navbar from './Navbar'
 
 const Development = () => {
   return (
+    
     <>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <div className="flex flex-col h-screen text-white font-mono bg-background ">
         <div className="py-12 ">
           <Navbar />

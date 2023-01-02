@@ -11,7 +11,7 @@ const Navbar = () => {
               <img src={logo} alt="" className="justify-self-start w-32 py-1 ml-14 shadow-md hover:shadow-xl" />
             </Link>
           </div>
-          <div className="w-8/12 flex justify-self-center justify-center items-center gap-12 text-xl">
+          <div className="basis-1/3 flex justify-self-center justify-center items-center gap-12 text-xl">
               <Link className="Nav__link" to="/development">Development</Link>
               <Link className="Nav__link" to="/investments">Investments</Link> 
               <Link className="Nav__link" to="/operations">Operations</Link>

@@ -18,22 +18,24 @@ import CommitteeBlock from './CommitteeBlock'
 
 const Home = () => {
   return (
+    
     <>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <div className="flex flex-col h-screen text-white font-mono overscroll-contain">
         <div className="py-12 ">
           <Navbar />
         </div>
 
         {/* Graphics */}
-        <div className="absolute right-0 top-24 w- 56">
+        {/* <div className="absolute right-0 top-24 w-72">
           <img src={graphics} className="h-screen" alt="" />
-        </div>
+        </div> */}
 
 
         {/* Welcome section */}
         <div className="flex flex-col mx-32">
           {/* Welcome Text */}
-          <div className="mt-32 text-6xl font-bold w-1/2">
+          <div className="mt-32 text-6xl font-bold w-full">
             <span >
               Welcome to
             </span>
@@ -43,8 +45,11 @@ const Home = () => {
           </div>
 
           {/* About text */}
-          <div className="tracking-tight leading-5 text-[19px] mt-8 mb-24 w-[34rem]">
-            FranklinDAO is part of the EduDAO initiative, founded by students at the University of Pennsylvania.
+          <div className="tracking-tight leading-5 text-[1.3rem] mt-8  w-full">
+            FranklinDAO is part of the EduDAO initiative,
+          </div>
+          <div className="tracking-tight leading-5 text-[1.3rem] mt-2 mb-24 w-full">
+          founded by students at the University of Pennsylvania.
           </div>
 
           {/* Get Involved Button */}
@@ -53,7 +58,7 @@ const Home = () => {
           </button>
 
           {/* Interest text */}
-          <div className="mt-44 text-4xl font-bold w-1/2">
+          <div className="mt-44 text-4xl font-bold w-full">
             <span className="text-purple">
               Join
             </span>
@@ -62,8 +67,11 @@ const Home = () => {
             </span>
           </div>
 
-          <div className="tracking-tight leading-5 text-base mt-8 text-[18px] w-1/2 mb-28">
-            FranklinDAO draws from broad networks of alumni founders and investors, seeking continued collaboration with leading innovators and drivers in the space.
+          <div className="tracking-tight leading-5 text-base mt-8 text-[1.3rem]">
+            FranklinDAO draws from broad networks of alumni founders and investors, seeking continued 
+          </div>
+          <div className="tracking-tight leading-5 text-base mt-2 text-[1.3rem] mb-28">
+        collaboration with leading innovators and drivers in the space.
           </div>
         </div>
 
@@ -85,7 +93,7 @@ const Home = () => {
           </div>
 
           <div className='grid grid-cols-3 gap-10 m-3'>
-            <CommitteeBlock img={overview5} link={"/events"} name={"Events"} description={"Ecosystem exposure and networking"}/>
+            <CommitteeBlock className img={overview5} link={"/events"} name={"Events"} description={"Ecosystem exposure and networking"}/>
             <CommitteeBlock img={overview6} link={"/operations"} name={"Operations"} description={"Internal DAO management"}/>
             <CommitteeBlock img={overview7} link={"/education"} name={"Education"} description={"Onboarding and onramping"}/>
           </div>
