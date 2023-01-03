@@ -39,7 +39,7 @@ const Home = () => {
             <span >
               Welcome to
             </span>
-            <span className="ml-9 text-purple">
+            <span className="ml-6 text-purple ">
               FranklinDAO
             </span>
           </div>
