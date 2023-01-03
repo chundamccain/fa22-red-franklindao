@@ -17,7 +17,7 @@ const EventsPage = () => {
 
                     <BigText name={"Events"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} />
 
-                </div>
+                </div> 
 
                 <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-60'>
                     Upcoming Events

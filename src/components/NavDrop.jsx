@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
-const Navbar = () => {
+const NavDrop = () => {
 
   const [open, setOpen] = React.useState(false);
 
@@ -28,16 +28,16 @@ const Navbar = () => {
               <img src={logo} alt="" className="justify-self-start w-32 py-1 ml-14 shadow-md hover:shadow-xl" />
             </Link>
           </div>
-            <div className="basis-1/3 flex justify-self-center justify-center items-center gap-12 text-xl">
+            {/* <div className="basis-1/3 flex justify-self-center justify-center items-center gap-12 text-xl">
               <Link className="Nav__link" to="/development">Development</Link>
               <Link className="Nav__link" to="/investments">Investments</Link> 
               <Link className="Nav__link" to="/operations">Operations</Link>
               <Link className="Nav__link" to="/research">Research</Link>
               <Link className="Nav__link" to="/events">Events</Link>
               <Link className="Nav__link" to="/education">Education</Link>
-            </div>
+            </div> */}
 
-            {/* <div>
+            <div>
             <button onClick={handleOpen}>Navigate</button>
             {
             open ? 
@@ -56,7 +56,7 @@ const Navbar = () => {
             
             }
 
-          </div> */}
+          </div>
 
 
         </div>
@@ -65,4 +65,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavDrop

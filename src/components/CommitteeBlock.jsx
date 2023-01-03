@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const CommitteeBlock = ({img, link, name, description}) => {
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-4">
         <Link className="Nav__link" to={link}>
           <img src={img} className="w-28" alt=""/>
         </Link>

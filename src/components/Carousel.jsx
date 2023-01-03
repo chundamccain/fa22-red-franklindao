@@ -79,7 +79,8 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="text-4xl font-bold mb-4">
+    <div className = "items-center">
+      <div className="text-center text-[3rem] font-bold mb-4">
         Board of Directors
       </div>
 
@@ -115,6 +116,7 @@ const Carousel = () => {
         <button className="relative top-28 h-20 carousel-button ml-5 text-6xl hover:drop-shadow-md hover:text-purple" onClick={handleNext}>
           &gt;
         </button>
+      </div>
       </div>
     </>
   )

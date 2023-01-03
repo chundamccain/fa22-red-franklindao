@@ -15,7 +15,7 @@ const Research = () => {
       <div className="flex flex-col h-screen text-white font-mono bg-background">
         <div className="py-12 ">
           <Navbar />
-        </div>
+        </div> 
 
         {/* Welcome section */}
         <div className="flex flex-col mx-32 items-center">
