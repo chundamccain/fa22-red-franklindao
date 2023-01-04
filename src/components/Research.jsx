@@ -5,9 +5,11 @@ import researchicon from '../imgs/research.png'
 
 // components
 import Navbar from './Navbar'
-import Person from './Person'
+import Person from './AdaptPerson'
 import BigText from './Bigtext'
 import MediaBlock from './MediaBlock'
+import NavDrop from './NavDrop'
+
 
 import { useMediaQuery } from 'react-responsive'
 
@@ -38,7 +40,7 @@ const Research = () => {
     {isTabletOrMobile && 
       <div className="flex flex-col h-screen text-white font-mono bg-background">
         <div className="py-12 ">
-          <Navbar />
+          <NavDrop />
         </div> 
 
         {/* Welcome section */}
@@ -46,11 +48,11 @@ const Research = () => {
 
         <BigText name ={"Research"} description ={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"}/>
           
-          <div className='flex flex-row '>
-            <Person />
-            <Person />
-            <Person />
-          </div>
+        <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio}/>
+          <Person image = {portraits[1].image} name = {portraits[1].name} description = {portraits[1].description} bio = {portraits[1].bio}/>
+          <Person image = {portraits[2].image} name = {portraits[2].name} description = {portraits[2].description} bio = {portraits[2].bio}/>
+         
+
         </div>
 
         <div className="pt-24 pb-20 flex flex-col justify-center items-center">
@@ -151,9 +153,9 @@ const Research = () => {
         <BigText name ={"Research"} description ={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"}/>
           
           <div className='flex flex-row '>
-            <Person />
-            <Person />
-            <Person />
+            <div className = "mx-5"> <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio}/></div>
+          <div className = "mx-5"><Person image = {portraits[1].image} name = {portraits[1].name} description = {portraits[1].description} bio = {portraits[1].bio}/></div>
+          <div className = "mx-5"><Person image = {portraits[2].image} name = {portraits[2].name} description = {portraits[2].description} bio = {portraits[2].bio}/></div>
           </div>
         </div>
 

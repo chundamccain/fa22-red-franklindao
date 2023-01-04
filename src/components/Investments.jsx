@@ -8,6 +8,8 @@ import { useMediaQuery } from 'react-responsive'
 // components
 import Navbar from './Navbar'
 import Person from './AdaptPerson'
+import NavDrop from './NavDrop'
+
 
 import Company from './Company'
 
@@ -40,7 +42,7 @@ const Investments = () => {
     {isTabletOrMobile && 
       <div className="flex flex-col h-screen text-white font-mono bg-background">
         <div className="py-12 ">
-          <Navbar />
+          <NavDrop />
         </div>
 
         {/* Welcome section */}

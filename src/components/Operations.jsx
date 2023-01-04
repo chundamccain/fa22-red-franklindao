@@ -6,6 +6,8 @@ import BigText from './Bigtext'
 import Events from './EventBlock'
 // components
 import Navbar from './Navbar'
+import NavDrop from './NavDrop'
+
 
 import { useMediaQuery } from 'react-responsive'
 
@@ -38,7 +40,7 @@ const Development = () => {
     {isTabletOrMobile && 
       <div className="flex flex-col h-screen text-white font-mono bg-background ">
         <div className="py-12 ">
-          <Navbar />
+          <NavDrop />
         </div>
 
         {/* Welcome section */}

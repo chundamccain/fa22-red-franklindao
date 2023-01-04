@@ -3,14 +3,26 @@ import BigText from './Bigtext'
 import Events from './EventBlock'
 import submitButton from '../imgs/submitbutton.svg'
 import Upcoming from './UpcomingEvent'
+import NavDrop from './NavDrop'
+
+
+
+import { useMediaQuery } from 'react-responsive'
+
+
+import Kirill from "../imgs/KirillNaumov_Investments.jpg"
+import Omar from "../imgs/OmarAmeen_Events.jpg"
+import Sofia from "../imgs/SofiaWawrzyniak_UndergraduatePresident.jpg"
+
 
 const EventsPage = () => {
+
     return (
         <>
             <div className="flex flex-col h-screen text-white font-mono bg-background">
 
                 <div className="py-12 ">
-                    <Navbar />
+                    <NavDrop />
                 </div>
 
                 <div className="flex flex-col mx-32 items-center">
@@ -27,16 +39,17 @@ const EventsPage = () => {
 
                 </div>
 
+               
+
                 <div className='flex flex-col justify-center items-center text-4xl font-semibold'>
                     Past Events
                 </div>
 
                 <div className='flex flex-col justify-center items-center'>
-                    <div className='flex flex-row pb-30' >
+                  
                         <Events title={"TITLE"} />
                         <Events title={"TITLE"} />
                         <Events title={"TITLE"} />
-                    </div>
                 </div>
 
                 
