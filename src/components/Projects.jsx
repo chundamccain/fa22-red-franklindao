@@ -36,37 +36,40 @@ const Projects = () => {
 
     <div className='flex flex-row'>
     
-    <ButtonBack style = {{padding: "50px"}}><Image style={{ height: "80px" }} src={leftarr} /> </ButtonBack>
+    <ButtonBack style = {{padding: "0px"}}><Image style={{ width: "10px", height: "30px" }} src={leftarr} /> </ButtonBack>
 
-    <div className = "border-8 border-purple rounded-3xl">
+    <div className = "">
 
-    <Slider style={{ width: "20rem"}}>
+    <Slider style={{ width: "15rem"}}>
       <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={0}>
         <WrapperMob className = "font-mono flex flex-col items-center align-items justify-center " >
-            <div className= "flex flex-col mx-6">
-            <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-              <Text1>Project Name</Text1>
-              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2>
+            <div className= "flex flex-col  items-center align-items">
+            <Text1Mob>Project Name</Text1Mob>
+            <Image className = "rounded-full " style = {{height: "10rem", width: "10rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+              
+              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2Mob>
             </div>
           
         </WrapperMob>
       </Slide>
       <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={1}>
-      <WrapperMob className = "font-mono flex flex-col items-center align-items justify-center h-screen pb-0 " >
-            <div className= "flex flex-col mx-6">
-            <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-              <Text1>Project Name</Text1>
-              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2>
+      <WrapperMob className = "font-mono flex flex-col items-center alpxgn-items justify-center h-screen pb-0 " >
+            <div className= "flex flex-col items-center align-items ">
+            <Text1Mob>Project Name</Text1Mob>
+            <Image className = "rounded-full " style = {{height: "10rem", width: "10rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+             
+              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2Mob>
             </div>
            
         </WrapperMob>
       </Slide>
       <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={2}>
       <WrapperMob className = "font-mono flex flex-col items-center align-items justify-center h-screen pb-0" >
-            <div className= "flex flex-col px-6">
-            <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem" , padding:"20px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-              <Text1>Project Name</Text1>
-              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</Text2>
+            <div className= "flex flex-col  items-center align-items">
+            <Text1Mob>Project Name</Text1Mob>
+            <Image className = "rounded-full " style = {{height: "10rem", width: "10rem" , padding:"20px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
+              
+              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</Text2Mob>
             </div>
            
         </WrapperMob>
@@ -76,7 +79,7 @@ const Projects = () => {
 
     </div>
 
-    <ButtonNext style = {{padding: "50px"}}><Image style={{ height: "80px" }} src={rightarr} /> </ButtonNext>
+    <ButtonNext style = {{padding: "0px"}}><Image style={{ width: "10px" , height: "30px" }} src={rightarr} /> </ButtonNext>
 
     </div>
 
@@ -106,7 +109,7 @@ const Projects = () => {
         <Wrapper className = "font-mono flex flex-row items-center align-items justify-center " >
             <div className= "flex flex-col mx-6">
               <Text1>Project Name</Text1>
-              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2Mob>
+              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2>
             </div>
             <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
         </Wrapper>
@@ -115,16 +118,16 @@ const Projects = () => {
       <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0 " >
             <div className= "flex flex-col mx-6">
               <Text1>Project Name</Text1>
-              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2Mob>
+              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2>
             </div>
             <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
         </Wrapper>
       </Slide>
       <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={2}>
       <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0" >
-            <div className= "flex flex-col px-6">
+            <div className= "flex flex-col mx-6">
               <Text1>Project Name</Text1>
-              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</Text2Mob>
+              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</Text2>
             </div>
             <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem" , padding:"20px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
         </Wrapper>
@@ -152,8 +155,22 @@ export default Projects;
 
 
 const WrapperMob = styled.section`
-width: 20rem;
+width: 15rem;
 height: 668px;
+`;
+
+const Text1Mob = styled.text`
+font-style: normal;
+text-align: center;
+font-weight: 700;
+font-family: 'Karla';
+margin-bottom: 50px;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #FFFFFF;
 `;
 
 const Text2Mob = styled.text`
@@ -164,8 +181,9 @@ font-style: normal;
 font-weight: 400;
 
 font-family: 'Karla';
-font-size: 24px;
-line-height: 28px;
+font-size: 17px;
+margin-top: 30px;
+line-height: 23px;
 text-align: center;
 
 color: #FFFFFF;

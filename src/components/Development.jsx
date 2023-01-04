@@ -88,9 +88,10 @@ const Development = () => {
                 clients that we have been working with
               </span>
             </div>
-            <Project />
           </div>
         </div>
+        <Project />
+
       </div>
     }
     </>
