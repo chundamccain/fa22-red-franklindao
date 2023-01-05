@@ -59,47 +59,35 @@ const Research = () => {
           <span className="text-4xl font-semibold p-5">
             Spotlights
           </span>
-          <span className="text-lg">
-            Articles and past work done by operations
+          <span className="text-lg text-center">
+            Articles and past work done by operations commitee members
           </span>
-          <span className="text-lg">
-            commitee members
-          </span>
+         
         </div>
 
-        <div className='flex flex-row pl-10'>
-          <span className="flex flex-col justify-left text mx-32 text-4xl font-semibold pt-10">
+        <div className='flex flex-col text-4xl items-center'>
+          <span className=" text-center mx-32  font-semibold pt-10">
             Twitter
           </span>
-          <div className='flex flex-row pr-10 pl-40'>
-            <div className='pr-10'>
-              <img className="w-36 h-30" src={twitter} alt="" />
-              <img className="w-36 h-30" src={twitter} alt="" />
-              <img className="w-36 h-30" src={twitter} alt="" />
-            </div>
-
-
-            <div className='flex flex-col pr-20 pt-5'>
-              <span className='pb-5'>
+          <img className="w-36 h-30 " src={twitter} alt="" />
+         
+              <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </span>
 
-              <span className='pb-5 mt-12'>
+              <span className=' mt-10 mx-4 text-center text-[20px] leading-[22px]'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </span>
 
-              <span className='pb-5 mt-12'>
+              <span className=' mt-10 mx-4 text-center text-[20px] leading-[22px]'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </span>
-            </div>
-
-          </div>
         </div>
 
         <div>
-          <span className="flex flex-col justify-center items-center text-4xl font-semibold mt-40">
+          <span className="flex flex-col justify-center text-center items-center text-4xl font-semibold mt-40">
             Videos, Podcasts, Audio
-            <div className='flex flex-row'>
+            <div className='flex flex-col'>
             <MediaBlock name = {"TITLE"}/>
             <MediaBlock name = {"TITLE"}/>
             <MediaBlock name = {"TITLE"}/>
@@ -110,35 +98,27 @@ const Research = () => {
          
         </div>
         {/*Videos*/}
-          
-        <div className='flex flex-row pl-10'>
-          <span className="flex flex-col justify-left text mx-32 text-4xl font-semibold pt-10">
+
+        <div className='flex flex-col text-4xl items-center'>
+          <span className=" text-center mx-32  font-semibold pt-10">
             Long-form Research
           </span>
-          <div className='flex flex-row pr-10'>
-            <div className='pr-10'>
-              <img className="w-32 h-26 py-6" src={researchicon} alt="" />
-              <img className="w-32 h-26 py-6" src={researchicon} alt="" />
-              <img className="w-32 h-26 py-6" src={researchicon} alt="" />
-            </div>
-
-
-            <div className='flex flex-col pr-20 pt-5'>
-              <span className='pb-5'>
+          <img className="w-32 h-26 py-6" src={researchicon} alt="" />
+         
+              <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </span>
 
-              <span className='pb-5 mt-24'>
+              <span className=' mt-10 mx-4 text-center text-[20px] leading-[22px]'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </span>
 
-              <span className='pb-5 mt-20'>
+              <span className=' mt-10 mx-4 text-center text-[20px] leading-[22px]'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </span>
-            </div>
-
-          </div>
         </div>
+          
+       
       </div>
 }
      {isDesktopOrLaptop && 
