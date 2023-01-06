@@ -106,15 +106,7 @@ const EventsPage = () => {
                         <Events title={"TITLE"} />
                     </div>
 
-                    <div className="flex justify-center items-center h-scree mt-28">
-                        <div className="flex flex-col items-center">
-                            <div className="text-4xl">
-                                Workshop/Collaboration Form
-                            </div>
-                            <ContactForm />
-                        </div>
-                    </div>
-
+                    <ContactForm title="Workshop/Collaboration Form" />
 
                 </div>
             }
