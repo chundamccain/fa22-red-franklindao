@@ -90,8 +90,8 @@ const Development = () => {
             </div>
           </div>
         </div>
-        <Project />
 
+        <Project />
       </div>
     }
     </>
