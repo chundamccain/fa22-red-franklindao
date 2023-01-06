@@ -155,27 +155,28 @@ const Research = () => {
             <span className="flex flex-col justify-left text mx-32 text-4xl font-semibold pt-10">
               Twitter
             </span>
-            <div className='flex flex-row pr-10 pl-40'>
-              <div className='pr-10'>
-                <img className="w-36 h-30" src={twitter} alt="" />
-                <img className="w-36 h-30" src={twitter} alt="" />
-                <img className="w-36 h-30" src={twitter} alt="" />
-              </div>
 
+            {/* Populate Tweet Data Inside*/}
+            <div className='flex flex-col pr-10 pl-28'>
+                <div className='flex flex-row'>
+                  <img className="w-40 py-6" src={twitter} alt="" />
+                  <blockquote class="twitter-tweet ml-6 pt-12"><p lang="en" dir="ltr">Research member <a href="https://twitter.com/0xPhoreal?ref_src=twsrc%5Etfw">@0xPhoreal</a> explains the importance of zkEVMs with zkSync. Check out his helpful thread! <a href="https://twitter.com/hashtag/L222?src=hash&amp;ref_src=twsrc%5Etfw">#L222</a> <a href="https://twitter.com/hashtag/ZkEVM?src=hash&amp;ref_src=twsrc%5Etfw">#ZkEVM</a> <a href="https://twitter.com/hashtag/ZKP?src=hash&amp;ref_src=twsrc%5Etfw">#ZKP</a> <a href="https://twitter.com/hashtag/Polygon?src=hash&amp;ref_src=twsrc%5Etfw">#Polygon</a> <a href="https://t.co/H7Up043vNe">https://t.co/H7Up043vNe</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1610351542519083009?ref_src=twsrc%5Etfw">January 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
 
-              <div className='flex flex-col pr-20 pt-5'>
-                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Research member <a href="https://twitter.com/0xPhoreal?ref_src=twsrc%5Etfw">@0xPhoreal</a> explains the importance of zkEVMs with zkSync. Check out his helpful thread! <a href="https://twitter.com/hashtag/L222?src=hash&amp;ref_src=twsrc%5Etfw">#L222</a> <a href="https://twitter.com/hashtag/ZkEVM?src=hash&amp;ref_src=twsrc%5Etfw">#ZkEVM</a> <a href="https://twitter.com/hashtag/ZKP?src=hash&amp;ref_src=twsrc%5Etfw">#ZKP</a> <a href="https://twitter.com/hashtag/Polygon?src=hash&amp;ref_src=twsrc%5Etfw">#Polygon</a> <a href="https://t.co/H7Up043vNe">https://t.co/H7Up043vNe</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1610351542519083009?ref_src=twsrc%5Etfw">January 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div className='flex flex-row'>
+                  <img className="w-40 py-6" src={twitter} alt="" />
+                  <blockquote class="twitter-tweet ml-6 pt-12" data-theme="dark"><p lang="en" dir="ltr">We take a look at undercollateralized/RWA lending protocols and why they&#39;re attractive from a TradFi framework:<a href="https://t.co/OEQvtbM9IK">https://t.co/OEQvtbM9IK</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1606541337951899650?ref_src=twsrc%5Etfw">December 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
 
-                <blockquote class="twitter-tweet pb-5 mt-12" data-theme="dark"><p lang="en" dir="ltr">We take a look at undercollateralized/RWA lending protocols and why they&#39;re attractive from a TradFi framework:<a href="https://t.co/OEQvtbM9IK">https://t.co/OEQvtbM9IK</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1606541337951899650?ref_src=twsrc%5Etfw">December 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                <blockquote class="twitter-tweet pb-5 mt-12"><p lang="en" dir="ltr">We take a look at undercollateralized/RWA lending protocols and why they&#39;re attractive from a TradFi framework:<a href="https://t.co/OEQvtbM9IK">https://t.co/OEQvtbM9IK</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1606541337951899650?ref_src=twsrc%5Etfw">December 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-
+                <div className='flex flex-row'>
+                  <img className="w-40 py-6" src={twitter} alt="" />
+                  <blockquote class="twitter-tweet ml-6 pt-12"><p lang="en" dir="ltr">We take a look at undercollateralized/RWA lending protocols and why they&#39;re attractive from a TradFi framework:<a href="https://t.co/OEQvtbM9IK">https://t.co/OEQvtbM9IK</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1606541337951899650?ref_src=twsrc%5Etfw">December 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
             </div>
           </div>
 
           <div>
-            <span className="flex flex-col justify-center items-center text-4xl font-semibold mt-40">
+            <span className="flex flex-col justify-center items-center text-4xl font-semibold mt-28">
               Videos, Podcasts, Audio
               <div className='flex flex-row'>
                 <MediaBlock name={"TITLE"} />
@@ -189,32 +190,33 @@ const Research = () => {
           </div>
           {/*Videos*/}
 
-          <div className='flex flex-row pl-10'>
-            <span className="flex flex-col justify-left text mx-32 text-4xl font-semibold pt-10">
+          <div className='flex flex-row pl-10 mt-16'>
+            <span className="flex flex-col justify-left text ml-32 text-4xl font-semibold pt-10">
               Long-form Research
             </span>
-            <div className='flex flex-row pr-10'>
-              <div className='pr-10'>
-                <img className="w-32 h-26 py-6" src={researchicon} alt="" />
-                <img className="w-32 h-26 py-6" src={researchicon} alt="" />
-                <img className="w-32 h-26 py-6" src={researchicon} alt="" />
+
+            {/* Populate Research Data Inside*/}
+            <div className='flex flex-col pr-10 pl-20'>
+              <div className='flex flex-row'>
+                <img className="w-32 py-6" src={researchicon} alt="" />
+                <div className="ml-6 pt-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                </div>
               </div>
 
-
-              <div className='flex flex-col pr-20 pt-5'>
-                <span className='pb-5'>
+              <div className='flex flex-row'>
+                <img className="w-32 py-6" src={researchicon} alt="" />
+                <div className="ml-6 pt-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </span>
-
-                <span className='pb-5 mt-24'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </span>
-
-                <span className='pb-5 mt-20'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </span>
+                </div>
               </div>
 
+              <div className='flex flex-row'>
+                <img className="w-32 py-6" src={researchicon} alt="" />
+                <div className="ml-6 pt-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                </div>
+              </div>
             </div>
           </div>
         </div>

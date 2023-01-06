@@ -5,10 +5,7 @@ import submitButton from '../imgs/submitbutton.svg'
 import Upcoming from './UpcomingEvent'
 import NavDrop from './NavDrop'
 
-
-
 import { useMediaQuery } from 'react-responsive'
-
 
 import Kirill from "../imgs/KirillNaumov_Investments.jpg"
 import Omar from "../imgs/OmarAmeen_Events.jpg"
@@ -17,7 +14,6 @@ import ContactForm from './ContactForm'
 
 
 const EventsPage = () => {
-
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 800px)' })
     const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
@@ -26,11 +22,8 @@ const EventsPage = () => {
 
     return (
         <>
-
-
             {isTabletOrMobile &&
                 <div className="flex flex-col h-screen text-white font-mono bg-background">
-
                     <div className="py-12 ">
                         <NavDrop />
                     </div>
@@ -39,7 +32,7 @@ const EventsPage = () => {
                         <BigText name={"Events"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} />
                     </div>
 
-                    <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-60'>
+                    <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-28'>
                         Upcoming Events
                         <Upcoming />
                         <Upcoming />
@@ -56,7 +49,6 @@ const EventsPage = () => {
                         <Events title={"TITLE"} />
                     </div>
 
-
                     <div className="flex justify-center items-center h-scree mt-28">
                         <div className="flex flex-col items-center">
                             <div className="text-4xl">
@@ -72,15 +64,11 @@ const EventsPage = () => {
                             </button>
                         </div>
                     </div>
-
                 </div>
             }
 
-
-
             {isDesktopOrLaptop &&
                 <div className="flex flex-col h-screen text-white font-mono bg-background">
-
                     <div className="py-12 ">
                         <Navbar />
                     </div>
@@ -89,17 +77,17 @@ const EventsPage = () => {
                         <BigText name={"Events"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} />
                     </div>
 
-                    <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-60'>
+                    <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-28'>
                         Upcoming Events
                         <Upcoming />
                         <Upcoming />
                         <Upcoming />
                     </div>
 
-
                     <div className='flex flex-col justify-center items-center text-4xl font-semibold'>
                         Past Events
                     </div>
+
                     <div className='flex flex-row justify-center items-center'>
                         <Events title={"TITLE"} />
                         <Events title={"TITLE"} />
@@ -107,7 +95,6 @@ const EventsPage = () => {
                     </div>
 
                     <ContactForm title="Workshop/Collaboration Form" />
-
                 </div>
             }
         </>
