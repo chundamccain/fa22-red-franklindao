@@ -1,151 +1,141 @@
 // imgs
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import leftarr from '../imgs/Vector52.png';
 import rightarr from '../imgs/Vector51.png';
 import { useMediaQuery } from 'react-responsive'
+import db from "../lib/firebase"
 
 
 import {
   ButtonBack, ButtonFirst, ButtonLast, ButtonNext,
   CarouselProvider, DotGroup, Image, ImageWithZoom, Slide, Slider,
-}  from 'pure-react-carousel';
+} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+
+const Project = (props) => {
+  return (
+    <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={props.project.order}>
+      <Wrapper className="font-mono flex flex-row items-center align-items justify-center " >
+        <div className="flex flex-col mx-6">
+          <Text1>{props.project.title}</Text1>
+          <Text2>{props.project.desc}</Text2>
+        </div>
+        <Image className="rounded-full mx-6" style={{ height: "25rem", width: "25rem" }} src={props.project.image} />
+      </Wrapper>
+    </Slide>
+  )
+}
+
+const MobileProject = (props) => {
+  return (
+    <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={props.project.order}>
+      <WrapperMob className="font-mono flex flex-col items-center align-items justify-center h-screen pb-0" >
+        <div className="flex flex-col  items-center align-items">
+          <Text1Mob>{props.project.title}</Text1Mob>
+          <Image className="rounded-full " style={{ height: "10rem", width: "10rem", padding: "20px" }} src={props.project.image} />
+          <Text2Mob>{props.project.desc}</Text2Mob>
+        </div>
+
+      </WrapperMob>
+    </Slide>
+  )
+}
 
 const Projects = () => {
 
-  const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 800px)'})
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    // Hook to handle the initial fetching of posts
+
+    db.collection("development-projects")
+      .orderBy("order")
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }))
+
+        setProjects(data)
+      })
+  }, [])
+
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 800px)' })
   const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
- 
-    return(
+
+  console.log(projects)
+
+  return (
     <>
 
-{isTabletOrMobile && 
-    <CarouselProvider
-    visibleSlides={1}
-    totalSlides={3}
-    naturalSlideWidth={9}
-    naturalSlideHeight={3}
-    hasMasterSpinner
+      {isTabletOrMobile &&
+        <CarouselProvider
+          visibleSlides={1}
+          totalSlides={3}
+          naturalSlideWidth={9}
+          naturalSlideHeight={3}
+          hasMasterSpinner
 
-    className="grid h-screen place-items-center"
-  >
+          className="grid h-screen place-items-center"
+        >
 
-    <div className='flex flex-row'>
-    
-    <ButtonBack style = {{padding: "0px"}}><Image style={{ width: "10px", height: "30px" }} src={leftarr} /> </ButtonBack>
+          <div className='flex flex-row'>
 
-    <div className = "">
+            <ButtonBack style={{ padding: "0px" }}><Image style={{ width: "10px", height: "30px" }} src={leftarr} /> </ButtonBack>
 
-    <Slider style={{ width: "15rem"}}>
-      <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={0}>
-        <WrapperMob className = "font-mono flex flex-col items-center align-items justify-center " >
-            <div className= "flex flex-col  items-center align-items">
-            <Text1Mob>Project Name</Text1Mob>
-            <Image className = "rounded-full " style = {{height: "10rem", width: "10rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-              
-              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2Mob>
+            <div className="">
+
+              <Slider style={{ width: "15rem" }}>
+                {projects.map(project => (
+                  <MobileProject project={project} key={project.id} />
+                ))}
+              </Slider>
+
             </div>
-          
-        </WrapperMob>
-      </Slide>
-      <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={1}>
-      <WrapperMob className = "font-mono flex flex-col items-center alpxgn-items justify-center h-screen pb-0 " >
-            <div className= "flex flex-col items-center align-items ">
-            <Text1Mob>Project Name</Text1Mob>
-            <Image className = "rounded-full " style = {{height: "10rem", width: "10rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-             
-              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2Mob>
+
+            <ButtonNext style={{ padding: "0px" }}><Image style={{ width: "10px", height: "30px" }} src={rightarr} /> </ButtonNext>
+
+          </div>
+
+        </CarouselProvider>
+      }
+
+
+      {isDesktopOrLaptop &&
+        <CarouselProvider
+          visibleSlides={1}
+          totalSlides={3}
+          naturalSlideWidth={9}
+          naturalSlideHeight={3}
+          hasMasterSpinner
+
+          className="grid h-screen place-items-center"
+        >
+
+          <div className='flex flex-row'>
+
+            <ButtonBack style={{ padding: "50px" }}><Image style={{ height: "80px" }} src={leftarr} /> </ButtonBack>
+            <div className="border-8 border-purple rounded-3xl">
+              <Slider style={{ width: "60rem" }}>
+                {projects.map(project => (
+                  <Project project={project} key={project.id} />
+                ))}
+              </Slider>
             </div>
-           
-        </WrapperMob>
-      </Slide>
-      <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={2}>
-      <WrapperMob className = "font-mono flex flex-col items-center align-items justify-center h-screen pb-0" >
-            <div className= "flex flex-col  items-center align-items">
-            <Text1Mob>Project Name</Text1Mob>
-            <Image className = "rounded-full " style = {{height: "10rem", width: "10rem" , padding:"20px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-              
-              <Text2Mob>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</Text2Mob>
-            </div>
-           
-        </WrapperMob>
-      </Slide>
-    
-    </Slider>
+            <ButtonNext style={{ padding: "50px" }}><Image style={{ height: "80px" }} src={rightarr} /> </ButtonNext>
 
-    </div>
+          </div>
 
-    <ButtonNext style = {{padding: "0px"}}><Image style={{ width: "10px" , height: "30px" }} src={rightarr} /> </ButtonNext>
-
-    </div>
-
-  </CarouselProvider>
- }
-
-
-    {isDesktopOrLaptop && 
-    <CarouselProvider
-    visibleSlides={1}
-    totalSlides={3}
-    naturalSlideWidth={9}
-    naturalSlideHeight={3}
-    hasMasterSpinner
-
-    className="grid h-screen place-items-center"
-  >
-
-    <div className='flex flex-row'>
-    
-    <ButtonBack style = {{padding: "50px"}}><Image style={{ height: "80px" }} src={leftarr} /> </ButtonBack>
-
-    <div className = "border-8 border-purple rounded-3xl">
-
-    <Slider style={{ width: "60rem"}}>
-      <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={0}>
-        <Wrapper className = "font-mono flex flex-row items-center align-items justify-center " >
-            <div className= "flex flex-col mx-6">
-              <Text1>Project Name</Text1>
-              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2>
-            </div>
-            <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-        </Wrapper>
-      </Slide>
-      <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={1}>
-      <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0 " >
-            <div className= "flex flex-col mx-6">
-              <Text1>Project Name</Text1>
-              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </Text2>
-            </div>
-            <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-        </Wrapper>
-      </Slide>
-      <Slide style={{ padding: "5em 0em", height: "42rem" }} tag="a" index={2}>
-      <Wrapper className = "font-mono flex flex-row items-center align-items justify-center h-screen pb-0" >
-            <div className= "flex flex-col mx-6">
-              <Text1>Project Name</Text1>
-              <Text2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</Text2>
-            </div>
-            <Image className = "rounded-full mx-6" style = {{height: "25rem", width: "25rem" , padding:"20px"}}src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg" />
-        </Wrapper>
-      </Slide>
-    
-    </Slider>
-
-    </div>
-
-    <ButtonNext style = {{padding: "50px"}}><Image style={{ height: "80px" }} src={rightarr} /> </ButtonNext>
-
-    </div>
-
-  </CarouselProvider>
- }
-  </>
-    )
-    };
+        </CarouselProvider>
+      }
+    </>
+  )
+};
 
 export default Projects;
 

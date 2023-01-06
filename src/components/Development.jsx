@@ -1,7 +1,7 @@
 // imgs
 import involveButton from '../imgs/involvebutton.svg'
 import Person from './AdaptPerson'
-import Project from './Projects'
+import Projects from './Projects'
 import BigText from './Bigtext'
 import NavDrop from './NavDrop'
 import { useMediaQuery } from 'react-responsive'
@@ -55,7 +55,7 @@ const Development = () => {
               </span>
            
             </div>
-            <Project />
+            <Projects />
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ const Development = () => {
           </div>
         </div>
 
-        <Project />
+        <Projects />
       </div>
     }
     </>
