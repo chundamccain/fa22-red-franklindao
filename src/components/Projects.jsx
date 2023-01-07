@@ -76,30 +76,23 @@ const Projects = () => {
       {isTabletOrMobile &&
         <CarouselProvider
           visibleSlides={1}
-          totalSlides={3}
+          totalSlides={projects.length}
           naturalSlideWidth={9}
           naturalSlideHeight={3}
           hasMasterSpinner
-
           className="grid h-screen place-items-center"
         >
 
           <div className='flex flex-row'>
-
             <ButtonBack style={{ padding: "0px" }}><Image style={{ width: "10px", height: "30px" }} src={leftarr} /> </ButtonBack>
-
             <div className="">
-
               <Slider style={{ width: "15rem" }}>
                 {projects.map(project => (
                   <MobileProject project={project} key={project.id} />
                 ))}
               </Slider>
-
             </div>
-
             <ButtonNext style={{ padding: "0px" }}><Image style={{ width: "10px", height: "30px" }} src={rightarr} /> </ButtonNext>
-
           </div>
 
         </CarouselProvider>
@@ -109,7 +102,7 @@ const Projects = () => {
       {isDesktopOrLaptop &&
         <CarouselProvider
           visibleSlides={1}
-          totalSlides={3}
+          totalSlides={projects.length}
           naturalSlideWidth={9}
           naturalSlideHeight={3}
           hasMasterSpinner
