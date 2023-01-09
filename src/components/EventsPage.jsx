@@ -1,24 +1,38 @@
+import { useEffect, useState } from 'react'
+import db from "../lib/firebase"
+
 import Navbar from './Navbar'
 import BigText from './Bigtext'
 import Events from './EventBlock'
 import submitButton from '../imgs/submitbutton.svg'
 import Upcoming from './UpcomingEvent'
 import NavDrop from './NavDrop'
+import ContactForm from './ContactForm'
 
 import { useMediaQuery } from 'react-responsive'
 
-import Kirill from "../imgs/KirillNaumov_Investments.jpg"
-import Omar from "../imgs/OmarAmeen_Events.jpg"
-import Sofia from "../imgs/SofiaWawrzyniak_UndergraduatePresident.jpg"
-import ContactForm from './ContactForm'
-
 
 const EventsPage = () => {
+
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 800px)' })
-    const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
-    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-    const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+
+    const [pastEvents, setPastEvents] = useState([])
+
+    // Retrieve firestore data
+    useEffect(() => {
+        db.collection("events-past")
+            .orderBy("order")
+            .get()
+            .then((querySnapshot) => {
+                const data = querySnapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    ...doc.data(),
+                }))
+
+                setPastEvents(data)
+            })
+    }, [])
 
     return (
         <>
@@ -44,9 +58,9 @@ const EventsPage = () => {
                     </div>
 
                     <div className='flex flex-col justify-center items-center'>
-                        <Events title={"TITLE"} />
-                        <Events title={"TITLE"} />
-                        <Events title={"TITLE"} />
+                        {pastEvents.map(pastEvent => (
+                            <Events title={pastEvent.title} />
+                        ))}
                     </div>
 
                     <div className="flex justify-center items-center h-scree mt-28">
@@ -89,9 +103,9 @@ const EventsPage = () => {
                     </div>
 
                     <div className='flex flex-row justify-center items-center'>
-                        <Events title={"TITLE"} />
-                        <Events title={"TITLE"} />
-                        <Events title={"TITLE"} />
+                        {pastEvents.map(pastEvent => (
+                            <Events title={pastEvent.title} image={pastEvent.image} />
+                        ))}
                     </div>
 
                     <ContactForm title="Workshop/Collaboration Form" />
