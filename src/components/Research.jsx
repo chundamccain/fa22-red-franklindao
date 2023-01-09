@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react'
+import db from "../lib/firebase"
+
 // imgs
 import involveButton from '../imgs/involvebutton.svg'
 import twitter from '../imgs/twitter.png'
@@ -28,12 +31,24 @@ const Research = () => {
 
   ]
 
-
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 800px)' })
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
-  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+
+  const [tweets, setTweets] = useState([])
+
+  useEffect(() => {
+    db.collection("research-tweets")
+      .orderBy("order")
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }))
+
+        setTweets(data)
+      })
+  }, [])
 
   return (
     <>
@@ -105,6 +120,10 @@ const Research = () => {
             </span>
             <img className="w-32 h-26 py-6" src={researchicon} alt="" />
 
+            {tweets.map(tweet => (
+              <div className="content" dangerouslySetInnerHTML={{ __html: tweet.content }} />
+            ))}
+
             <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             </span>
@@ -121,6 +140,7 @@ const Research = () => {
 
         </div>
       }
+
       {isDesktopOrLaptop &&
         <div className="flex flex-col h-screen text-white font-mono bg-background">
           <div className="py-12 ">
@@ -158,20 +178,13 @@ const Research = () => {
 
             {/* Populate Tweet Data Inside*/}
             <div className='flex flex-col pr-10 pl-28'>
+              {tweets.map(tweet => (
                 <div className='flex flex-row'>
                   <img className="w-40 py-6" src={twitter} alt="" />
-                  <blockquote class="twitter-tweet ml-6 pt-12"><p lang="en" dir="ltr">Research member <a href="https://twitter.com/0xPhoreal?ref_src=twsrc%5Etfw">@0xPhoreal</a> explains the importance of zkEVMs with zkSync. Check out his helpful thread! <a href="https://twitter.com/hashtag/L222?src=hash&amp;ref_src=twsrc%5Etfw">#L222</a> <a href="https://twitter.com/hashtag/ZkEVM?src=hash&amp;ref_src=twsrc%5Etfw">#ZkEVM</a> <a href="https://twitter.com/hashtag/ZKP?src=hash&amp;ref_src=twsrc%5Etfw">#ZKP</a> <a href="https://twitter.com/hashtag/Polygon?src=hash&amp;ref_src=twsrc%5Etfw">#Polygon</a> <a href="https://t.co/H7Up043vNe">https://t.co/H7Up043vNe</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1610351542519083009?ref_src=twsrc%5Etfw">January 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  {/* Injects html code from tweet embed */}
+                  <div className="content" dangerouslySetInnerHTML={{ __html: tweet.content }} />
                 </div>
-
-                <div className='flex flex-row'>
-                  <img className="w-40 py-6" src={twitter} alt="" />
-                  <blockquote class="twitter-tweet ml-6 pt-12" data-theme="dark"><p lang="en" dir="ltr">We take a look at undercollateralized/RWA lending protocols and why they&#39;re attractive from a TradFi framework:<a href="https://t.co/OEQvtbM9IK">https://t.co/OEQvtbM9IK</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1606541337951899650?ref_src=twsrc%5Etfw">December 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-
-                <div className='flex flex-row'>
-                  <img className="w-40 py-6" src={twitter} alt="" />
-                  <blockquote class="twitter-tweet ml-6 pt-12"><p lang="en" dir="ltr">We take a look at undercollateralized/RWA lending protocols and why they&#39;re attractive from a TradFi framework:<a href="https://t.co/OEQvtbM9IK">https://t.co/OEQvtbM9IK</a></p>&mdash; FranklinDAO (@franklin_dao) <a href="https://twitter.com/franklin_dao/status/1606541337951899650?ref_src=twsrc%5Etfw">December 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+              ))}
             </div>
           </div>
 
