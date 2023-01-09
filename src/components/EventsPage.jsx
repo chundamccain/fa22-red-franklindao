@@ -18,6 +18,7 @@ const EventsPage = () => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
 
     const [pastEvents, setPastEvents] = useState([])
+    const [upcomingEvents, setUpcomingEvents] = useState([])
 
     // Retrieve firestore data
     useEffect(() => {
@@ -31,6 +32,18 @@ const EventsPage = () => {
                 }))
 
                 setPastEvents(data)
+            })
+
+        db.collection("events-upcoming")
+            .orderBy("order")
+            .get()
+            .then((querySnapshot) => {
+                const data = querySnapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    ...doc.data(),
+                }))
+
+                setUpcomingEvents(data)
             })
     }, [])
 
@@ -48,9 +61,10 @@ const EventsPage = () => {
 
                     <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-28'>
                         Upcoming Events
-                        <Upcoming />
-                        <Upcoming />
-                        <Upcoming />
+                        {upcomingEvents.map(upcomingEvent => (
+                            <Upcoming title={upcomingEvent.title} desc={upcomingEvent.desc}
+                                month={upcomingEvent.month} day={upcomingEvent.day} image={upcomingEvent.image} />
+                        ))}
                     </div>
 
                     <div className='flex flex-col justify-center items-center text-4xl font-semibold'>
@@ -59,7 +73,7 @@ const EventsPage = () => {
 
                     <div className='flex flex-col justify-center items-center'>
                         {pastEvents.map(pastEvent => (
-                            <Events title={pastEvent.title} />
+                            <Events title={pastEvent.title} image={pastEvent.image} />
                         ))}
                     </div>
 
@@ -93,9 +107,10 @@ const EventsPage = () => {
 
                     <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-28'>
                         Upcoming Events
-                        <Upcoming />
-                        <Upcoming />
-                        <Upcoming />
+                        {upcomingEvents.map(upcomingEvent => (
+                            <Upcoming title={upcomingEvent.title} desc={upcomingEvent.desc}
+                                month={upcomingEvent.month} day={upcomingEvent.day} image={upcomingEvent.image} />
+                        ))}
                     </div>
 
                     <div className='flex flex-col justify-center items-center text-4xl font-semibold'>

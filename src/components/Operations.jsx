@@ -71,7 +71,7 @@ const Development = () => {
             <BigText name={"Spotlights"} description={"Articles and past work done by operations committee members"} size={"100px"} />
 
             {spotlights.map(spotlight => (
-              <Events title={spotlight.title} />
+              <Events title={spotlight.title} image={spotlight.image} />
             ))}
           </div>
         </div>
