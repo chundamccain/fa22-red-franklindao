@@ -63,15 +63,13 @@ const Education = () => {
 
 
 
-                    <EventBlock name={"TITLE"} />
-                    <EventBlock name={"TITLE"} />
-                    <EventBlock name={"TITLE"} />
+                    <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
+                    <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
+                    <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
 
-
-
-                    <EventBlock name={"TITLE"} />
-                    <EventBlock name={"TITLE"} />
-                    <EventBlock name={"TITLE"} />
+                    <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
+                    <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
+                    <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
 
 
                 </div>
@@ -109,16 +107,16 @@ const Education = () => {
                     <div className='flex flex-row justify-center items center'>
 
                         <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
-                        <EventBlock name={"TITLE"} />
-                        <EventBlock name={"TITLE"} />
+                        <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
+                        <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
 
                     </div>
 
                     <div className='flex flex-row justify-center items center'>
 
-                        <EventBlock name={"TITLE"} />
-                        <EventBlock name={"TITLE"} />
-                        <EventBlock name={"TITLE"} />
+                        <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
+                        <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
+                        <EventBlock name={"TITLE"} image={"https://d.newsweek.com/en/full/1905075/file-photo-smiling-dog.jpg"} />
 
                     </div>
 
