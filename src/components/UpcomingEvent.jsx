@@ -15,7 +15,7 @@ const UpcomingEvent = ({ title, desc, month, day, image }) => {
     <>
       {isTabletOrMobile &&
         <div className="flex flex-row m-8">
-          <img src={image} style={{ width: "175px", height: "100px" }} />
+          <img className="object-cover w-64 h-48" src={image} />
           <div className="flex flex-col p-3">
             <Text1Mob>{month}</Text1Mob>
             <Text2Mob>{day}</Text2Mob>
@@ -29,7 +29,7 @@ const UpcomingEvent = ({ title, desc, month, day, image }) => {
 
       {isDesktopOrLaptop &&
         <div className="flex flex-row m-8">
-          <img src={image} style={{ width: "175px", height: "118px" }} />
+          <img className="object-cover w-64 h-48" src={image} />
           <div className="flex flex-col m-8">
             <Text1>{month}</Text1>
             <Text2>{day}</Text2>

@@ -182,7 +182,7 @@ const Research = () => {
                 <div className='flex flex-row'>
                   <img className="w-40 py-6" src={twitter} alt="" />
                   {/* Injects html code from tweet embed */}
-                  <div className="content" dangerouslySetInnerHTML={{ __html: tweet.content }} />
+                  <div className="mt-12 content" dangerouslySetInnerHTML={{ __html: tweet.content }} />
                 </div>
               ))}
             </div>

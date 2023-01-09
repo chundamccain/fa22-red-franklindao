@@ -116,10 +116,10 @@ const Investments = () => {
           </div>*/}
           </div>
 
-          <div className="flex flex-row mt-40">
+          <div className="flex flex-row mt-28">
             {/*Partnerships*/}
             <div className="flex flex-col items-center basis-1/2">
-              <div className="mt-72 text-5xl font-bold text-white">
+              <div className="mt-80 text-5xl font-bold text-white">
                 Partnerships
               </div>
 
@@ -139,18 +139,17 @@ const Investments = () => {
             </div>
 
             <div className="mr-20 grid grid-cols-3 basis-1/2">
-              <div className="col-span-3">
-                <Company company={"Company1"} />
-              </div>
+              <div/>
+              <Company company={"Company1"} />
+              <div/>
 
               <Company company={"Company2"} />
               <Company company={"Company3"} />
               <Company company={"Company4"} />
 
-
-              <div className="col-span-3">
-                <Company className="col-span-3" company={"Company5"} />
-              </div>
+              <div/>
+              <Company className="col-span-3" company={"Company5"} />
+              <div/>
             </div>
           </div>
 

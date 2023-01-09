@@ -18,7 +18,7 @@ const EventBlock = ({title, image}) => {
         </div>
 
         <div className="flex flex-col w-72 py-2 px-2 rounded-lg bg-dark_purple">
-          <img className = "border-blue rounded-lg" src={image} alt = ""/>
+          <img className = "border-blue object-cover w-72 h-52 rounded-lg" src={image} alt = ""/>
           <button className="mt-4 text-lg">
             read more
           </button> 
@@ -33,7 +33,7 @@ const EventBlock = ({title, image}) => {
         </div>
 
         <div className="flex flex-col w-72 py-2 px-2 rounded-lg bg-dark_purple">
-          <img className = "border-blue rounded-lg" src={image} alt = ""/>
+          <img className = "border-blue object-cover w-72 h-52 rounded-lg" src={image} alt = ""/>
           <button className="mt-4 text-lg">
             read more
           </button> 

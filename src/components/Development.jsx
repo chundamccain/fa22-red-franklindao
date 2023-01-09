@@ -90,8 +90,10 @@ const Development = () => {
             </div>
           </div>
         </div>
-
-        <Projects />
+        
+        <div>
+          <Projects />
+        </div>
       </div>
     }
     </>
