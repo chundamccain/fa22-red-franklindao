@@ -35,6 +35,9 @@ const Research = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
 
   const [tweets, setTweets] = useState([])
+  const [media, setMedia] = useState([])
+  const [longform, setLongform] = useState([])
+
 
   useEffect(() => {
     db.collection("research-tweets")
@@ -47,6 +50,30 @@ const Research = () => {
         }))
 
         setTweets(data)
+      })
+
+    db.collection("research-media")
+      .orderBy("order")
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }))
+
+        setMedia(data)
+      })
+
+    db.collection("research-longform")
+      .orderBy("order")
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }))
+
+        setLongform(data)
       })
   }, [])
 
@@ -86,17 +113,11 @@ const Research = () => {
             </span>
             <img className="w-36 h-30 " src={twitter} alt="" />
 
-            <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
-              Lorem ipsum
-            </span>
-
-            <span className=' mt-10 mx-4 text-center text-[20px] leading-[22px]'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            </span>
-
-            <span className=' mt-10 mx-4 text-center text-[20px] leading-[22px]'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            </span>
+            {tweets.map(tweet => (
+              <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
+                <div className="content" dangerouslySetInnerHTML={{ __html: tweet.content }} />
+              </span>
+            ))}
           </div>
 
           <div>
@@ -119,10 +140,6 @@ const Research = () => {
               Long-form Research
             </span>
             <img className="w-32 h-26 py-6" src={researchicon} alt="" />
-
-            {tweets.map(tweet => (
-              <div className="content" dangerouslySetInnerHTML={{ __html: tweet.content }} />
-            ))}
 
             <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -192,9 +209,9 @@ const Research = () => {
             <span className="flex flex-col justify-center items-center text-4xl font-semibold mt-28">
               Videos, Podcasts, Audio
               <div className='flex flex-row'>
-                <MediaBlock name={"TITLE"} />
-                <MediaBlock name={"TITLE"} />
-                <MediaBlock name={"TITLE"} />
+                {media.map(m => (
+                  <MediaBlock name={m.title} image={m.image} />
+                ))}
               </div>
 
             </span>
@@ -210,26 +227,14 @@ const Research = () => {
 
             {/* Populate Research Data Inside*/}
             <div className='flex flex-col pr-10 pl-20'>
-              <div className='flex flex-row'>
-                <img className="w-32 py-6" src={researchicon} alt="" />
-                <div className="ml-6 pt-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              {longform.map(l => (
+                <div className='flex flex-row'>
+                  <img className="w-32 py-6" src={researchicon} alt="" />
+                  <div className="ml-6 pt-6">
+                    {l.content}
+                  </div>
                 </div>
-              </div>
-
-              <div className='flex flex-row'>
-                <img className="w-32 py-6" src={researchicon} alt="" />
-                <div className="ml-6 pt-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </div>
-              </div>
-
-              <div className='flex flex-row'>
-                <img className="w-32 py-6" src={researchicon} alt="" />
-                <div className="ml-6 pt-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
