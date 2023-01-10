@@ -124,9 +124,9 @@ const Research = () => {
             <span className="flex flex-col justify-center text-center items-center text-4xl font-semibold mt-40">
               Videos, Podcasts, Audio
               <div className='flex flex-col'>
-                <MediaBlock name={"TITLE"} />
-                <MediaBlock name={"TITLE"} />
-                <MediaBlock name={"TITLE"} />
+                {media.map(m => (
+                  <MediaBlock name={m.title} image={m.image} />
+                ))}
               </div>
 
             </span>
@@ -139,19 +139,14 @@ const Research = () => {
             <span className=" text-center mx-32  font-semibold pt-10">
               Long-form Research
             </span>
+
             <img className="w-32 h-26 py-6" src={researchicon} alt="" />
 
-            <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            </span>
-
-            <span className=' mt-10 mx-4 text-center text-[20px] leading-[22px]'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            </span>
-
-            <span className=' mt-10 mx-4 text-center text-[20px] leading-[22px]'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            </span>
+            {longform.map(l => (
+              <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
+                {l.content}
+              </span>
+            ))}
           </div>
 
 
