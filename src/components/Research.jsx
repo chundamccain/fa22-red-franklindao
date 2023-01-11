@@ -221,7 +221,7 @@ const Research = () => {
             </span>
 
             {/* Populate Research Data Inside*/}
-            <div className='flex flex-col pr-10 pl-20'>
+            <div className='mb-10 flex flex-col pr-10 pl-20'>
               {longform.map(l => (
                 <div className='flex flex-row'>
                   <img className="w-32 py-6" src={researchicon} alt="" />
