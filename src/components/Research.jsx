@@ -143,7 +143,7 @@ const Research = () => {
             <img className="w-32 h-26 py-6" src={researchicon} alt="" />
 
             {longform.map(l => (
-              <span className='  mt-10 mx-4 text-center text-[20px] leading-[22px]'>
+              <span className='mb-10 mt-10 mx-4 text-center text-[20px] leading-[22px]'>
                 {l.content}
               </span>
             ))}
