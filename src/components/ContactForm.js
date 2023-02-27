@@ -7,7 +7,7 @@ import submitButton from '../imgs/submitbutton.svg'
 const ContactForm = (props) => {
 
   // This form uses Formpress. To change the recipient email, generate a new key
-  const formpressKey = "mdovodyn"
+  const formpressKey = "xnqyvqnj"
 
   const [state, handleSubmit] = useForm(formpressKey)
   if (state.succeeded) {
