@@ -15,17 +15,12 @@ import NavDrop from './NavDrop'
 import { useMediaQuery } from 'react-responsive'
 
 
-import Kirill from "../imgs/KirillNaumov_Investments.jpg"
-import Omar from "../imgs/OmarAmeen_Events.jpg"
-import Sofia from "../imgs/SofiaWawrzyniak_UndergraduatePresident.jpg"
+import Evan from "../imgs/EvanFenster_Operations.jpg"
 
 const Development = () => {
 
   const portraits = [
-    { image: Sofia, name: "Sofia Wawrzyniak", description: "Undergraduate President", bio: "Insert Small Bio" },
-    { image: Omar, name: "Omar Ameen", description: "Events Director", bio: "Insert Small Bio" },
-    { image: Kirill, name: "Kirill Naumov", description: "Investments Director", bio: "Insert Small Bio" },
-
+    { image: Evan, name: "Evan Fenster", description: "Director of Operations", bio: "CS & Biz Analytics", bio2: "Product @ Celo, DAO Research @ Wharton" },
   ]
 
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 800px)' })
@@ -62,17 +57,15 @@ const Development = () => {
 
           {/* Welcome section */}
           <div className="flex flex-col mx-32 items-center">
-            <BigText name={"Operations"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} size={"940px"} />
+            <BigText name={"Operations"} description={"The Operations Committee of FranklinDAO is a group of highly skilled individuals dedicated to the growth and success of the DAO. The team is responsible for several key functions, including organizing and sending members to relevant conferences and events, developing relationships and partnerships with protocols and companies in the space, establishing and maintaining brand guidelines, and facilitating connections between members and full-time opportunities with protocols."} size={"940px"} />
 
-            <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} />
-            <Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} />
-            <Person image={portraits[2].image} name={portraits[2].name} description={portraits[2].description} bio={portraits[2].bio} />
+            <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} linkedin="https://www.linkedin.com/in/evanfen/" twitter="https://twitter.com/evanfenster" />
 
-            <BigText name={"Spotlights"} description={"Articles and past work done by operations committee members"} size={"100px"} />
+            {/* <BigText name={"Spotlights"} description={"Articles and past work done by operations committee members"} size={"100px"} />
 
             {spotlights.map(spotlight => (
               <Events title={spotlight.title} image={spotlight.image} />
-            ))}
+            ))} */}
           </div>
         </div>
       }
@@ -85,19 +78,17 @@ const Development = () => {
 
           {/* Welcome section */}
           <div className="flex flex-col mx-32 items-center">
-            <BigText name={"Operations"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} size={"940px"} />
+            <BigText name={"Operations"} description={"The Operations Committee of FranklinDAO is a group of highly skilled individuals dedicated to the growth and success of the DAO. The team is responsible for several key functions, including organizing and sending members to relevant conferences and events, developing relationships and partnerships with protocols and companies in the space, establishing and maintaining brand guidelines, and facilitating connections between members and full-time opportunities with protocols."} size={"940px"} />
             <div className='flex flex-row '>
-              <div className="mx-5"> <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} /></div>
-              <div className="mx-5"><Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} /></div>
-              <div className="mx-5"><Person image={portraits[2].image} name={portraits[2].name} description={portraits[2].description} bio={portraits[2].bio} /></div>
+              <div className="mx-5"> <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} linkedin="https://www.linkedin.com/in/evanfen/" twitter="https://twitter.com/evanfenster" /></div>
             </div>
-            <BigText name={"Spotlights"} description={"Articles and past work done by operations committee members"} size={"100px"} />
+            {/* <BigText name={"Spotlights"} description={"Articles and past work done by operations committee members"} size={"100px"} />
 
             <div className='flex flex-row pb-60' >
               {spotlights.map(spotlight => (
                 <Events title={spotlight.title} image={spotlight.image} />
               ))}
-            </div>
+            </div> */}
 
           </div>
         </div>

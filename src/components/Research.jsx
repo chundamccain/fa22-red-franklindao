@@ -16,19 +16,15 @@ import NavDrop from './NavDrop'
 
 import { useMediaQuery } from 'react-responsive'
 
-
-import Kirill from "../imgs/KirillNaumov_Investments.jpg"
-import Omar from "../imgs/OmarAmeen_Events.jpg"
-import Sofia from "../imgs/SofiaWawrzyniak_UndergraduatePresident.jpg"
+import Erik from "../imgs/ErikZhang_Research.jpg"
+import Cindy from "../imgs/CindyJiang_Research.jpg"
 
 const Research = () => {
 
 
   const portraits = [
-    { image: Sofia, name: "Sofia Wawrzyniak", description: "Undergraduate President", bio: "Insert Small Bio" },
-    { image: Omar, name: "Omar Ameen", description: "Events Director", bio: "Insert Small Bio" },
-    { image: Kirill, name: "Kirill Naumov", description: "Investments Director", bio: "Insert Small Bio" },
-
+    { image: Erik, name: "Erik Zhang", description: "Director of Research", bio: "CS & Finance,'24", bio2:"ex-Slate Path Capital Analyst" },
+    { image: Cindy, name: "Cindy Jiang", description: "Director of Research", bio: "CS & Business,'24", bio2:"ex-Galaxy Digital VC Analyst" },
   ]
 
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 800px)' })
@@ -88,12 +84,10 @@ const Research = () => {
           {/* Welcome section */}
           <div className="flex flex-col mx-32 items-center">
 
-            <BigText name={"Research"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} />
+            <BigText name={"Research"} description={"Research writes thesis driven, evidence backed and stress tested industry level research. We work with protocols, VCs, and Hedge Funds, fulfilling various research needs. Reach out to either of the directors if you are interested!"} />
 
-            <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} />
-            <Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} />
-            <Person image={portraits[2].image} name={portraits[2].name} description={portraits[2].description} bio={portraits[2].bio} />
-
+            <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/erikbzhang" linkedin = "https://www.linkedin.com/in/erik-zhang/" />
+            <Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} bio2={portraits[1].bio2} twitter="https://twitter.com/cindyjxy" linkedin="https://www.linkedin.com/in/cindyxjiang/"/>
 
           </div>
 
@@ -162,12 +156,11 @@ const Research = () => {
           {/* Welcome section */}
           <div className="flex flex-col mx-32 items-center">
 
-            <BigText name={"Research"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} />
+            <BigText name={"Research"} description={"Research writes thesis driven, evidence backed and stress tested industry level research. We work with protocols, VCs, and Hedge Funds, fulfilling various research needs. Reach out to either of the directors if you are interested!"} />
 
             <div className='flex flex-row '>
-              <div className="mx-5"> <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} /></div>
-              <div className="mx-5"><Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} /></div>
-              <div className="mx-5"><Person image={portraits[2].image} name={portraits[2].name} description={portraits[2].description} bio={portraits[2].bio} /></div>
+              <div className="mx-5"> <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/erikbzhang" linkedin = "https://www.linkedin.com/in/erik-zhang/" /></div>
+              <div className="mx-5"><Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio}  bio2={portraits[1].bio2} twitter="https://twitter.com/cindyjxy" linkedin="https://www.linkedin.com/in/cindyxjiang/"/></div>
             </div>
           </div>
 

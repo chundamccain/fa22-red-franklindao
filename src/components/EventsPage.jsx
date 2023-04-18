@@ -11,11 +11,18 @@ import ContactForm from './ContactForm'
 
 import { useMediaQuery } from 'react-responsive'
 
+import Vivian from "../imgs/Vivia.jpg"
+import Omar from "../imgs/OmarAmeen_Events.jpg"
 
 const EventsPage = () => {
 
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 800px)' })
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
+
+    const portraits = [
+      {image: Vivian, name: "Vivian Zhu", description: "Development Director", bio: "Insert Small Bio"},
+      { image: Omar, name :"Omar Ameen", description : "Events Director", bio : "Insert Small Bio"},
+    ]
 
     const [pastEvents, setPastEvents] = useState([])
     const [upcomingEvents, setUpcomingEvents] = useState([])

@@ -11,8 +11,8 @@ import { useMediaQuery } from 'react-responsive'
 import Navbar from './Navbar'
 
 import Kirill from "../imgs/KirillNaumov_Investments.jpg"
+import Jonah from "../imgs/JonahBurian_Development.jpg"
 import Omar from "../imgs/OmarAmeen_Events.jpg"
-import Sofia from "../imgs/SofiaWawrzyniak_UndergraduatePresident.jpg"
 
 
 const Development = () => {
@@ -24,10 +24,9 @@ const Development = () => {
   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   const portraits = [
-    {image: Sofia, name: "Sofia Wawrzyniak", description: "Undergraduate President", bio: "Insert Small Bio"},
+    {image: Jonah, name: "Jonah Burian", description: "Development Director", bio: "Insert Small Bio"},
     { image: Omar, name :"Omar Ameen", description : "Events Director", bio : "Insert Small Bio"},
     {image: Kirill, name : "Kirill Naumov", description : "Investments Director", bio :"Insert Small Bio"},
-   
   ]
 
   return (
@@ -44,7 +43,7 @@ const Development = () => {
           <BigText name={"Development"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} />
 
           
-          <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio}/>
+          <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio} twitter="" linkedin="https://www.linkedin.com/in/jonah-burian/"/>
           <Person image = {portraits[1].image} name = {portraits[1].name} description = {portraits[1].description} bio = {portraits[1].bio}/>
           <Person image = {portraits[2].image} name = {portraits[2].name} description = {portraits[2].description} bio = {portraits[2].bio}/>
           
@@ -72,7 +71,7 @@ const Development = () => {
           <BigText name={"Development"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} />
 
           <div className='flex flex-row mx-8'>
-           <div className = "mx-5"> <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio}/></div>
+           <div className = "mx-5"> <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio} twitter="" linkedin="https://www.linkedin.com/in/jonah-burian/"/></div>
           <div className = "mx-5"><Person image = {portraits[1].image} name = {portraits[1].name} description = {portraits[1].description} bio = {portraits[1].bio}/></div>
           <div className = "mx-5"><Person image = {portraits[2].image} name = {portraits[2].name} description = {portraits[2].description} bio = {portraits[2].bio}/></div>
           </div>

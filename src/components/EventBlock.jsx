@@ -1,7 +1,7 @@
 import { useMediaQuery } from 'react-responsive'
 
 
-const EventBlock = ({title, image}) => {
+const EventBlock = ({title, image, name, about}) => {
 
   const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 800px)'})
   const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
@@ -20,7 +20,7 @@ const EventBlock = ({title, image}) => {
         <div className="flex flex-col w-72 py-2 px-2 rounded-lg bg-dark_purple">
           <img className = "border-blue object-cover w-72 h-52 rounded-lg" src={image} alt = ""/>
           <button className="mt-4 text-lg">
-            read more
+            <a href={about}>read more</a>
           </button> 
         </div>
       </div>
@@ -29,13 +29,13 @@ const EventBlock = ({title, image}) => {
     {isDesktopOrLaptop && 
       <div className="flex flex-col items-center m-6">
         <div className="mb-2 text-xl">
-          {title}
+          {name}
         </div>
 
         <div className="flex flex-col w-72 py-2 px-2 rounded-lg bg-dark_purple">
           <img className = "border-blue object-cover w-72 h-52 rounded-lg" src={image} alt = ""/>
           <button className="mt-4 text-lg">
-            read more
+            <a href={about}>read more</a>
           </button> 
         </div>
       </div>

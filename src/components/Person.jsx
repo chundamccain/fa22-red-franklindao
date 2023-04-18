@@ -6,7 +6,7 @@ import involveButton from '../imgs/involvebutton.svg'
 // components
 import styled from 'styled-components';
 
-const Person = ({name, description, image}) => {
+const Person = ({name, description, image, twitter, linkedin}) => {
 
   return (
     <>
@@ -18,8 +18,8 @@ const Person = ({name, description, image}) => {
         <Text2>Insert Small Bio</Text2>
 
         <div className = "flex flex-row m-6">
-          <img className = "m-1 bg-purple rounded-md" src = {image2} alt = ""/>
-          <img className = "m-1 bg-purple rounded-md" src = {image1} alt = ""/>
+          <a href = {twitter}><img className = "m-1 bg-purple rounded-md" src = {image2} alt = "" /></a>
+          <a href = {linkedin}><img className = "m-1 bg-purple rounded-md" src = {image1} alt = "" /></a>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ import involveButton from '../imgs/involvebutton.svg'
 // components
 import styled from 'styled-components';
 
-const AdaptPerson = ({name, description,bio, image}) => {
+const AdaptPerson = ({name, description, bio, bio2, image, twitter, linkedin}) => {
 
   return (
     <>
@@ -16,10 +16,11 @@ const AdaptPerson = ({name, description,bio, image}) => {
         <Text1>{name}</Text1>
         <Text2>{description}</Text2>
         <Text2>{bio}</Text2>
+        <Text3>{bio2}</Text3>
 
         <div className = "flex flex-row m-6">
-          <img className = "m-1 bg-purple rounded-md" src = {image2} alt = ""/>
-          <img className = "m-1 bg-purple rounded-md" src = {image1} alt = ""/>
+          <a href={twitter}><img className = "m-1 bg-purple rounded-md" src = {image2} alt = ""/></a>
+          <a href={linkedin}><img className = "m-1 bg-purple rounded-md" src = {image1} alt = ""/></a>
         </div>
       </div>
     </>
@@ -48,6 +49,16 @@ font-style: normal;
 text-align: center;
 font-weight: 400;
 font-size: 1.2rem;
+line-height: 1.5rem;
+
+color: #FFFFFF;
+`;
+
+const Text3 = styled.text`
+font-style: normal;
+text-align: center;
+font-weight: 400;
+font-size: 1rem;
 line-height: 1.4rem;
 
 color: #FFFFFF;
