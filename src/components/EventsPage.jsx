@@ -11,7 +11,7 @@ import ContactForm from './ContactForm'
 
 import { useMediaQuery } from 'react-responsive'
 
-import Vivian from "../imgs/Vivia.jpg"
+import Vivian from "../imgs/VivianZhu.jpg"
 import Omar from "../imgs/OmarAmeen_Events.jpg"
 
 const EventsPage = () => {
