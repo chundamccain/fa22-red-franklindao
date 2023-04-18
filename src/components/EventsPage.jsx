@@ -8,6 +8,7 @@ import submitButton from '../imgs/submitbutton.svg'
 import Upcoming from './UpcomingEvent'
 import NavDrop from './NavDrop'
 import ContactForm from './ContactForm'
+import Person from './AdaptPerson'
 
 import { useMediaQuery } from 'react-responsive'
 
@@ -20,8 +21,8 @@ const EventsPage = () => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
 
     const portraits = [
-      {image: Vivian, name: "Vivian Zhu", description: "Development Director", bio: "Insert Small Bio"},
-      { image: Omar, name :"Omar Ameen", description : "Events Director", bio : "Insert Small Bio"},
+      {image: Vivian, name: "Vivian Zhu", description: "Events Director", bio: "Penn CS & Finance '25", bio2: "Interested in DeFi"},
+      {image: Omar, name :"Omar Ameen", description : "Events Director", bio : "Penn CS '25", bio2: "Intersted in Humanitarian Efforts x Crypto"},
     ]
 
     const [pastEvents, setPastEvents] = useState([])
@@ -63,7 +64,10 @@ const EventsPage = () => {
                     </div>
 
                     <div className="flex flex-col mx-32 items-center">
-                        <BigText name={"Events"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} />
+                        <BigText name={"Events"} description={"Welcome to the Events Committee of the Penn Blockchain Club! Our mission is to connect University of Pennsylvania students with the broader Web3 industry and build a vibrant community in this exciting and rapidly evolving space. Through our speaker sessions, workshops, hackathons, and annual Penn Blockchain Conference, we provide opportunities for members to exchange ideas, explore new technologies, and network with industry leaders. We are dedicated to fostering innovation, collaboration, and career development, and we invite you to join us in shaping the future of the Web3 ecosystem."} />
+
+                        <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/vivzhuu" linkedin="https://www.linkedin.com/in/vivianzhu88/" />
+                        <Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} bio2={portraits[1].bio2} linkedin="https://www.linkedin.com/in/omar-ameen02/"/>
                     </div>
 
                     <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-28'>
@@ -109,7 +113,12 @@ const EventsPage = () => {
                     </div>
 
                     <div className="flex flex-col mx-32 items-center">
-                        <BigText name={"Events"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol"} />
+                        <BigText name={"Events"} description={"Welcome to the Events Committee of the Penn Blockchain Club! Our mission is to connect University of Pennsylvania students with the broader Web3 industry and build a vibrant community in this exciting and rapidly evolving space. Through our speaker sessions, workshops, hackathons, and annual Penn Blockchain Conference, we provide opportunities for members to exchange ideas, explore new technologies, and network with industry leaders. We are dedicated to fostering innovation, collaboration, and career development, and we invite you to join us in shaping the future of the Web3 ecosystem."} />
+
+                        <div className='flex flex-row '>
+                          <div className="mx-5"> <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/vivzhuu" linkedin="https://www.linkedin.com/in/vivianzhu88/" /></div>
+                          <div className="mx-5"> <Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} bio2={portraits[1].bio2} linkedin="https://www.linkedin.com/in/omar-ameen02/"/></div>
+                        </div>
                     </div>
 
                     <div className='flex flex-col justify-center items-center text-4xl font-semibold pb-28'>
