@@ -84,7 +84,7 @@ const EventsPage = () => {
 
                     <div className='flex flex-col justify-center items-center'>
                         {pastEvents.map(pastEvent => (
-                            <Events title={pastEvent.title} image={pastEvent.image} />
+                            <Events title={pastEvent.title} image={pastEvent.image} about={pastEvent.about} />
                         ))}
                     </div>
 
