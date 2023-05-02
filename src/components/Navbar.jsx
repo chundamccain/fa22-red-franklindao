@@ -35,6 +35,7 @@ const Navbar = () => {
               <Link className="Nav__link" to="/research">Research</Link>
               <Link className="Nav__link" to="/events">Events</Link>
               <Link className="Nav__link" to="/education">Education</Link>
+              <Link className="Nav__link" to="/governance">Governance</Link>
             </div>
 
             {/* <div>

@@ -9,6 +9,7 @@ import Projects from './components/DevProjs'
 import Operations from './components/Operations'
 import EventsPage from './components/EventsPage'
 import Education from './components/Education'
+import Governance from './components/Governance'
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -27,6 +28,7 @@ const App = () => {
         <Route path = "/research" element = {<Research />}></Route>
         <Route path = "/events" element = {<EventsPage/>}></Route>
         <Route path = "/education" element = {<Education/>}></Route>
+        <Route path="/governance" element={<Governance/>}></Route>
 
       </Routes>
 
