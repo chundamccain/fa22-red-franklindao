@@ -16,15 +16,15 @@ import Company from './Company'
 
 
 import Kirill from "../imgs/KirillNaumov_Investments.jpg"
-import Caleb from "../imgs/CalebInvestment.jpg"
+import Paavnee from "../imgs/Paavnee.jpg"
 
 
 const Investments = () => {
 
 
   const portraits = [
-    { image: Kirill, name: "Kirill Naumov", description: "Managing Director", bio: "Junior at Penn", bio2: "Galaxy Digital" },
-    { image: Caleb, name: "Caleb Shack", description: "Managing Director", bio: "Senior at Penn", bio2: "Research and Investments at Shima Capital" },
+    // { image: Kirill, name: "Kirill Naumov", description: "Managing Director", bio: "Junior at Penn", bio2: "Galaxy Digital" },
+    { image: Paavnee, name: "Paavnee Chauhan", description: "Director of Investments", bio: "PM @ Gemini" },
 
   ]
 
@@ -49,8 +49,8 @@ const Investments = () => {
             {/* Welcome Text */}
             <BigText name={"Investments"} description={"The Investments Committee partners with Web3 VCs to provide high-quality research, analytics, and sourcing. Our deep roots in the industry gives us an edge in finding the best founders early-on and to help connect them with the best resources."} />
 
-            <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/kinaumov?s=20" linkedin="https://www.linkedin.com/in/kirillnaumov/" />
-            <Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} bio2={portraits[1].bio2} twitter="https://twitter.com/0xShack" linkedin="https://www.linkedin.com/in/caleb-shack/"/>
+            {/* <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/kinaumov?s=20" linkedin="https://www.linkedin.com/in/kirillnaumov/" /> */}
+            <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="" linkedin="https://www.linkedin.com/in/paavneechauhan/" />
 
           </div>
 
@@ -95,8 +95,7 @@ const Investments = () => {
             <BigText name={"Investments"} description={"The Investments Committee partners with Web3 VCs to provide high-quality research, analytics, and sourcing. Our deep roots in the industry gives us an edge in finding the best founders early-on and to help connect them with the best resources."} />
 
             <div className='flex flex-row '>
-              <div className="mx-5"> <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/kinaumov?s=20" linkedin="https://www.linkedin.com/in/kirillnaumov/" /></div>
-              <div className="mx-5"><Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} bio2={portraits[1].bio2} twitter="https://twitter.com/0xShack" linkedin="https://www.linkedin.com/in/caleb-shack/" /></div>
+              <div className="mx-5"> <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="" linkedin="https://www.linkedin.com/in/paavneechauhan/" /></div>
             </div>
 
             {/*<div className="mt-32 text-6xl font-semibold w-3/4">

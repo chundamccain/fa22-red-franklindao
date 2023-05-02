@@ -5,30 +5,30 @@ import Shadow from './ShadowPerson'
 import leftarr from '../imgs/Vector52.png';
 import rightarr from '../imgs/Vector51.png';
 
-import Alejandro from "../imgs/AlejandroSafdie_MBAPresident.jpg"
-import Bo from "../imgs/BoCui_Treasurer.jpg"
 import Chunda from "../imgs/ChundaMcCain_UndergraduatePresident.jpg"
 import Erik from "../imgs/ErikZhang_Research.jpg"
 import Evan from "../imgs/EvanFenster_Operations.jpg"
-import Jonah from "../imgs/JonahBurian_Development.jpg"
-import Julianna from "../imgs/JuliannaCimillo_Events.jpg"
-import Jun from "../imgs/JunSun_Governance.JPEG"
 import Kirill from "../imgs/KirillNaumov_Investments.jpg"
 import Omar from "../imgs/OmarAmeen_Events.jpg"
 import Sofia from "../imgs/SofiaWawrzyniak_UndergraduatePresident.jpg"
+import Zile from "../imgs/ZileCao.jpg"
+import Vince from "../imgs/VinceTiu.jpg"
+import Paavnee from "../imgs/Paavnee.jpg"
+import Vivian from "../imgs/VivianZhu.jpg"
+import Alexander from "../imgs/Alexander_Education.jpg"
 
 const portraits = [
-  {image: Sofia, name: "Sofia Wawrzyniak", description: "Undergraduate President", bio: "Insert Small Bio"},
-  { image: Omar, name :"Omar Ameen", description : "Events Director", bio : "Insert Small Bio"},
-  {image: Kirill, name : "Kirill Naumov", description : "Investments Director", bio :"Insert Small Bio"},
-  {image: Jun, name : "Jun Sun", description : "Governance Director", bio : "Insert Small Bio"},
-  {image: Julianna,  name : "Julianna Cimillo", description : "Events Director", bio : "Insert Small Bio"},
-  {image: Jonah, name : "Jonah Burian", description : "Development Director", bio : "Insert Small Bio"},
-  {image: Evan, name : "Even Fenster", description : "Operations Director", bio : "Insert Small Bio"},
-  {image: Erik, name : "Erik Zhang", description : "Research Director",  bio : "Insert Small Bio"},
-  {image: Chunda, name : "Chunda McCain",  description : "Undergraduate President",  bio : "Insert Small Bio"},
-  {image: Bo, name : "Bo Cui", description : "Treasurer", bio : "Insert Small Bio"},
-  {image: Alejandro, name : "Alejandro Safdie",  description : "MBA President",  bio : "Insert Small Bio"},
+  {image: Sofia, name: "Sofia Wawrzyniak", description: "Managing Director", bio: "Summer Analyst @ Morgan Stanley"},
+  {image: Chunda, name : "Chunda McCain",  description : "Managing Director",  bio : "Ex-Research Scholar @ Blockchain Capital"},
+  {image: Vivian, name: "Vivian Zhu", description: "Events Director", bio: "Penn CS & Finance '25", bio2: "Interested in DeFi"},
+  {image: Omar, name :"Omar Ameen", description : "Events Director", bio : "Penn CS '25", bio2: "Intersted in Humanitarian Efforts x Crypto"},
+  {image: Kirill, name: "Kirill Naumov", description: "Managing Director", bio: "Junior at Penn & Galaxy Digital", },
+  {image: Evan, name : "Even Fenster", description : "Operations Director", bio : "CS & Biz Analytics"},
+  {image: Erik, name : "Erik Zhang", description : "Research Director",  bio : "CS & Finance,'24"},
+  { image: Zile, name :"Zile Cao", description : "Deputy Director of Development", bio : "Ambassador @ Solana | PM @ Weave"},
+  {image: Vince, name : "Vince Tiu", description : "Deputy Director of Development", bio :"Previously @ Infura, ConsenSys"},
+  { image: Paavnee, name: "Paavnee Chauhan", description: "Director of Investments", bio: "PM @ Gemini" },
+  {image: Alexander, name: "Alexander Narvaez-Duckworth", description: "Managing Director of Education", bio: ""}
 
 ]
 

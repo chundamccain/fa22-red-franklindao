@@ -17,14 +17,12 @@ import NavDrop from './NavDrop'
 import { useMediaQuery } from 'react-responsive'
 
 import Erik from "../imgs/ErikZhang_Research.jpg"
-import Cindy from "../imgs/CindyJiang_Research.jpg"
 
 const Research = () => {
 
 
   const portraits = [
-    { image: Erik, name: "Erik Zhang", description: "Director of Research", bio: "CS & Finance,'24", bio2:"ex-Slate Path Capital Analyst" },
-    { image: Cindy, name: "Cindy Jiang", description: "Director of Research", bio: "CS & Business,'24", bio2:"ex-Galaxy Digital VC Analyst" },
+    { image: Erik, name: "Erik Zhang", description: "Director of Research", bio: "CS & Finance,'24", bio2:"ex-Slate Path Capital Analyst" }
   ]
 
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 800px)' })
@@ -87,7 +85,6 @@ const Research = () => {
             <BigText name={"Research"} description={"Research writes thesis driven, evidence backed and stress tested industry level research. We work with protocols, VCs, and Hedge Funds, fulfilling various research needs. Reach out to either of the directors if you are interested!"} />
 
             <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/erikbzhang" linkedin = "https://www.linkedin.com/in/erik-zhang/" />
-            <Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio} bio2={portraits[1].bio2} twitter="https://twitter.com/cindyjxy" linkedin="https://www.linkedin.com/in/cindyxjiang/"/>
 
           </div>
 
@@ -160,7 +157,6 @@ const Research = () => {
 
             <div className='flex flex-row '>
               <div className="mx-5"> <Person image={portraits[0].image} name={portraits[0].name} description={portraits[0].description} bio={portraits[0].bio} bio2={portraits[0].bio2} twitter="https://twitter.com/erikbzhang" linkedin = "https://www.linkedin.com/in/erik-zhang/" /></div>
-              <div className="mx-5"><Person image={portraits[1].image} name={portraits[1].name} description={portraits[1].description} bio={portraits[1].bio}  bio2={portraits[1].bio2} twitter="https://twitter.com/cindyjxy" linkedin="https://www.linkedin.com/in/cindyxjiang/"/></div>
             </div>
           </div>
 

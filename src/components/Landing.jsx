@@ -100,7 +100,7 @@ const Home = () => {
          
             <CommitteeBlock img={overview1} link={"/research"} name={"Research"} description={"Quantitative market analysis"}/>
             <CommitteeBlock img={overview2} link={"/investments"} name={"Investment"} description={"Portfolio management"}/>
-            <CommitteeBlock img={overview3} link={"/"} name={"Governance"} description={"Vote and proposal generation"}/>
+            <CommitteeBlock img={overview3} link={"/Governance"} name={"Governance"} description={"Vote and proposal generation"}/>
             <CommitteeBlock img={overview4} link={"/development"} name={"Development"} description={"Professional engineering experience"}/>
          
             <CommitteeBlock className img={overview5} link={"/events"} name={"Events"} description={"Ecosystem exposure and networking"}/>
@@ -180,7 +180,7 @@ const Home = () => {
           <div className='grid grid-cols-4 gap-10 mb-28 m-3'>
             <CommitteeBlock img={overview1} link={"/research"} name={"Research"} description={"Quantitative market analysis"}/>
             <CommitteeBlock img={overview2} link={"/investments"} name={"Investment"} description={"Portfolio management"}/>
-            <CommitteeBlock img={overview3} link={"/"} name={"Governance"} description={"Vote and proposal generation"}/>
+            <CommitteeBlock img={overview3} link={"/Governance"} name={"Governance"} description={"Vote and proposal generation"}/>
             <CommitteeBlock img={overview4} link={"/development"} name={"Development"} description={"Professional engineering experience"}/>
           </div>
 

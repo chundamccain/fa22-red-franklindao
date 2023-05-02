@@ -11,7 +11,6 @@ import { useMediaQuery } from 'react-responsive'
 import Navbar from './Navbar'
 
 import Zile from "../imgs/ZileCao.jpg"
-import Jonah from "../imgs/JonahBurian_Development.jpg"
 import Vince from "../imgs/VinceTiu.jpg"
 
 
@@ -24,7 +23,6 @@ const Development = () => {
   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   const portraits = [
-    {image: Jonah, name: "Jonah Burian", description: "Director of Development", bio: "Inc. Investor @ Blockchain Capital"},
     { image: Zile, name :"Zile Cao", description : "Deputy Director of Development", bio : "Ambassador @ Solana | PM @ Weave"},
     {image: Vince, name : "Vince Tiu", description : "Deputy Director of Development", bio :"Previously @ Infura, ConsenSys"},
   ]
@@ -43,9 +41,8 @@ const Development = () => {
           <BigText name={"Development"} description={"The FranklinDAO development team is a collective of exceptional student software engineers focused on mastering and advancing Web3 development. Collaborating with leading protocols, securing grants for innovative software projects, and competing in hackathons, we strive to facilitate students' entry into Web3 careers. We also host an internal semester-long Web3 development course to onboard talented Web2 developers. Our students are available for part-time, full-time and project-based roles."} />
 
           
-          <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio} twitter="https://twitter.com/_JonahB_" linkedin="https://www.linkedin.com/in/jonah-burian/"/>
-          <Person image = {portraits[1].image} name = {portraits[1].name} description = {portraits[1].description} bio = {portraits[1].bio} twitter="https://twitter.com/zile_cao"linkedin="https://www.linkedin.com/in/zilecao/"/>
-          <Person image = {portraits[2].image} name = {portraits[2].name} description = {portraits[2].description} bio = {portraits[2].bio} twitter="https://twitter.com/vincetiu8" linkedin="https://www.linkedin.com/in/vincetiu8/"/>
+          <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio} twitter="https://twitter.com/zile_cao"linkedin="https://www.linkedin.com/in/zilecao/"/>
+          <Person image = {portraits[1].image} name = {portraits[1].name} description = {portraits[1].description} bio = {portraits[1].bio} twitter="https://twitter.com/vincetiu8" linkedin="https://www.linkedin.com/in/vincetiu8/"/>
           
           <div className='pt-20 pb-20'>
             <div className='flex flex-col justify-center items-center'>
@@ -71,9 +68,8 @@ const Development = () => {
           <BigText name={"Development"} description={"The FranklinDAO development team is a collective of exceptional student software engineers focused on mastering and advancing Web3 development. Collaborating with leading protocols, securing grants for innovative software projects, and competing in hackathons, we strive to facilitate students' entry into Web3 careers. We also host an internal semester-long Web3 development course to onboard talented Web2 developers. Our students are available for part-time, full-time and project-based roles."} />
 
           <div className='flex flex-row mx-8'>
-           <div className = "mx-5"> <Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio} twitter="" linkedin="https://www.linkedin.com/in/jonah-burian/"/></div>
-          <div className = "mx-5"><Person image = {portraits[1].image} name = {portraits[1].name} description = {portraits[1].description} bio = {portraits[1].bio} twitter="https://twitter.com/zile_cao" linkedin="https://www.linkedin.com/in/zilecao/"/></div>
-          <div className = "mx-5"><Person image = {portraits[2].image} name = {portraits[2].name} description = {portraits[2].description} bio = {portraits[2].bio} twitter="https://twitter.com/vincetiu8"linkedin="https://www.linkedin.com/in/vincetiu8/"/></div>
+          <div className = "mx-5"><Person image = {portraits[0].image} name = {portraits[0].name} description = {portraits[0].description} bio = {portraits[0].bio} twitter="https://twitter.com/zile_cao" linkedin="https://www.linkedin.com/in/zilecao/"/></div>
+          <div className = "mx-5"><Person image = {portraits[1].image} name = {portraits[1].name} description = {portraits[1].description} bio = {portraits[1].bio} twitter="https://twitter.com/vincetiu8"linkedin="https://www.linkedin.com/in/vincetiu8/"/></div>
           </div>
           <div className='pt-20 pb-20'>
             <div className='flex flex-col justify-center items-center'>
