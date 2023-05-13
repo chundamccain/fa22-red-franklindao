@@ -15,7 +15,7 @@ import ContactForm from './ContactForm'
 import Company from './Company'
 
 
-import Kirill from "../imgs/KirillNaumov_Investments.jpg"
+// import Kirill from "../imgs/KirillNaumov_Investments.jpg"
 import Paavnee from "../imgs/Paavnee.jpg"
 
 
