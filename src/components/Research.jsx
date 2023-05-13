@@ -194,7 +194,7 @@ const Research = () => {
               Videos, Podcasts, Audio
               <div className='flex flex-row'>
                 {media.map(m => (
-                  <MediaBlock name={m.title} image={m.image} />
+                  <MediaBlock name={m.title} image={m.image} link={m.link} />
                 ))}
               </div>
 
