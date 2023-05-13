@@ -148,7 +148,7 @@ const Investments = () => {
             </div>
           </div>
 
-          <ContactForm title="Contact" />
+          <ContactForm title="Contact" fkey="xayzkokj"/>
 
         </div>
       }

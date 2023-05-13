@@ -53,9 +53,9 @@ const Investments = () => {
           </div>
 
           <div className="flex flex-col mt-20">
-            <Company company={""} image="" />
-            <Company company={""} image="" />
-            <Company company={""} image="" />
+            <Company company={"LayerZero"} image="https://cdn-images-1.medium.com/max/1200/1*Iz7ZjBiBzQXhqWF8o1X9vw.png" />
+            <Company company={"Reserve Protocol"} image="https://media.licdn.com/dms/image/C560BAQE6rozMjjH-UA/company-logo_200_200/0/1619710110243?e=2147483647&v=beta&t=r3gyGpCif69v1MhnBd6tXk_S951SX2WcJapAI56keTk" />
+            {/* <Company company={""} image="" /> */}
             <Company className="col-span-3" company={"More coming soon..."} />
           </div>
 
@@ -132,20 +132,21 @@ const Investments = () => {
 
             <div className="mr-20 grid grid-cols-3 basis-1/2">
               <div/>
-              <Company company={""} image="" />
+              <Company company={"LayerZero"} image="https://cdn-images-1.medium.com/max/1200/1*Iz7ZjBiBzQXhqWF8o1X9vw.png" />
               <div/>
 
-              <Company company={""} image="" />
-              <Company company={""} image="" />
-              <Company company={""} image=""/>
+              <Company company={"Reserve Protocol"} image="https://media.licdn.com/dms/image/C560BAQE6rozMjjH-UA/company-logo_200_200/0/1619710110243?e=2147483647&v=beta&t=r3gyGpCif69v1MhnBd6tXk_S951SX2WcJapAI56keTk" />
+              <Company className="col-span-3" company={"More coming soon..."} image="https://t3.ftcdn.net/jpg/03/08/33/46/360_F_308334660_uHmbiG3XBfIYBJhocWnPIEjnfvWAznLk.jpg"/>
+              {/* <Company company={""} image="" />
+              <Company company={""} image=""/> */}
               
               <div/>
-              <Company className="col-span-3" company={"More coming soon..."} image="https://t3.ftcdn.net/jpg/03/08/33/46/360_F_308334660_uHmbiG3XBfIYBJhocWnPIEjnfvWAznLk.jpg"/>
+              {/* <Company className="col-span-3" company={"More coming soon..."} image="https://t3.ftcdn.net/jpg/03/08/33/46/360_F_308334660_uHmbiG3XBfIYBJhocWnPIEjnfvWAznLk.jpg"/> */}
               <div/>
             </div>
           </div>
 
-          <ContactForm title="Contact" />
+          <ContactForm title="Contact" fkey="mlekvbvw"/>
 
         </div>
       }

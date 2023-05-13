@@ -29,7 +29,7 @@ const EventBlock = ({title, image, name, about}) => {
     {isDesktopOrLaptop && 
       <div className="flex flex-col items-center m-6">
         <div className="mb-2 text-xl">
-          {name}
+          {title}
         </div>
 
         <div className="flex flex-col w-72 py-2 px-2 rounded-lg bg-dark_purple">

@@ -88,6 +88,7 @@ const EventsPage = () => {
                         ))}
                     </div>
 
+
                     <div className="flex justify-center items-center h-scree mt-28">
                         <div className="flex flex-col items-center">
                             <div className="text-4xl">
@@ -128,7 +129,7 @@ const EventsPage = () => {
                                 month={upcomingEvent.month} day={upcomingEvent.day} image={upcomingEvent.image} />
                         ))}
                     </div>
-
+                    
                     <div className='flex flex-col justify-center items-center text-4xl font-semibold'>
                         Past Events
                     </div>
@@ -139,7 +140,7 @@ const EventsPage = () => {
                         ))}
                     </div>
 
-                    <ContactForm title="Workshop/Collaboration Form" />
+                    <ContactForm title="Workshop/Collaboration Form" fkey="xnqyvqnj" />
                 </div>
             }
         </>
